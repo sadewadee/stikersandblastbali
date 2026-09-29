@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Style guide komponen | Sticker Sandblast Bali</title>
+<meta name="description" content="Halaman acuan internal: token desain dan 18 komponen mockup beserta nama kelas CSS-nya. Tidak untuk dipublikasikan.">
+<meta name="theme-color" content="#111111">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Plus+Jakarta+Sans:wght@700;800&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/styleguide.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Lewati ke konten utama</a>
+<!-- Sprite ikon: stroke 1.75, round caps/joins, viewBox 24. Pakai: <svg class="icon" aria-hidden="true"><use href="#i-nama"/></svg> -->
+<svg xmlns="http://www.w3.org/2000/svg" width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.5 20.5 5 16A8.5 8.5 0 1 1 8.2 19.2z"/><path d="M9.2 8.7c-.4.5-.4 1.300-.1 2.100.8 1.900 2.300 3.400 4.200 4.200.8.300 1.600.3 2.100-.1l.4-.4c.3-.3.3-.6 0-.9l-1.200-.9c-.3-.2-.6-.2-.9.1l-.4.4c-.9-.4-1.700-1.200-2.100-2.100l.4-.4c.3-.3.3-.6.1-.9l-.9-1.200c-.2-.3-.6-.3-.9 0z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3.500l1.500 4-2 1.500a10 10 0 0 0 6.500 6.500l1.500-2 4 1.500V19a2 2 0 0 1-2 2A15 15 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.500"/><path d="m4 7.500 8 5.500 8-5.500"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.700 7-11a7 7 0 1 0-14 0c0 5.300 7 11 7 11z"/><circle cx="12" cy="10" r="2.500"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.500 2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-chevron-left" viewBox="0 0 24 24"><path d="m15 6-6 6 6 6"/></symbol>
+  <symbol id="i-chevron-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.500 4.500 4.500L19 7.500"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.500 12.500v-8a1 1 0 0 1 1-1h8l8 8a1 1 0 0 1 0 1.400l-7.100 7.100a1 1 0 0 1-1.400 0z"/><circle cx="8.500" cy="8.500" r="1.200"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="6.500"/><path d="M12 2.500v4M12 17.500v4M2.500 12h4M17.500 12h4"/></symbol>
+  <symbol id="i-zap" viewBox="0 0 24 24"><path d="M13 2.500 4.500 13.500H11l-1 8 8.500-11H12z"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 12.500 9 5 9-5"/><path d="m3 17 9 5 9-5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4.500 6v6c0 4.500 3.200 7.800 7.500 9 4.300-1.200 7.500-4.500 7.500-9V6z"/><path d="m9 12 2.200 2.200L15.500 10"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M4 11 12 4l8 7"/><path d="M6 10v10h12V10"/><path d="M10 20v-5h4v5"/></symbol>
+  <symbol id="i-ruler" viewBox="0 0 24 24"><rect x="2.500" y="8" width="19" height="8" rx="1.500"/><path d="M7 8v3M11 8v4.500M15 8v3M19 8v4.500"/></symbol>
+  <symbol id="i-message" viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1h-9l-5 4v-4H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1z"/><path d="M8 9h8M8 12h5"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path d="M14.500 6a4 4 0 0 0 4.800 4.800L21 12.500 12.500 21a2.100 2.100 0 0 1-3-3l8.500-8.500"/><path d="m13 5 2-2 3 3-2 2"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.500 12S6 5.500 12 5.500 21.500 12 21.500 12 18 18.500 12 18.500 2.500 12 2.500 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M4 4l16 16"/><path d="M9.800 5.800A9 9 0 0 1 12 5.500c6 0 9.500 6.500 9.500 6.500a15 15 0 0 1-2.700 3.400M6.500 7.300A15 15 0 0 0 2.500 12S6 18.500 12 18.500a9 9 0 0 0 4-.9"/><path d="M10 10.200a3 3 0 0 0 3.800 3.800"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2.500v2M12 19.500v2M4.900 4.900l1.400 1.400M17.700 17.700l1.400 1.400M2.500 12h2M19.500 12h2M4.900 19.100l1.400-1.400M17.700 6.300l1.400-1.400"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2.500"/><circle cx="9" cy="10" r="1.700"/><path d="m21 16-5-5-8 8"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.500v13l11-6.500z"/></symbol>
+  <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V5m0 0L8 9m4-4 4 4M4 17v2a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-2"/></symbol>
+  <symbol id="i-expand" viewBox="0 0 24 24"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></symbol>
+  <symbol id="i-grip" viewBox="0 0 24 24"><path d="m8.500 7.500-4.500 4.500 4.500 4.500M15.500 7.500l4.500 4.500-4.500 4.500"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.500M12 7.800v.2"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M5 21V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v17M15 9h3a1 1 0 0 1 1 1v11M3 21h18"/><path d="M9 7h2M9 11h2M9 15h2"/></symbol>
+  <symbol id="i-cup" viewBox="0 0 24 24"><path d="M5 9h11v5a5 5 0 0 1-5 5h-1a5 5 0 0 1-5-5z"/><path d="M16 10h1.500a2.500 2.500 0 0 1 0 5H16M8 3.500v2M12 3.500v2"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2.500"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19C5 10.500 10.500 5.500 20 5c0 10-5 15-13 15z"/><path d="M5 19c3-4 6-6.500 9-8"/></symbol>
+  <symbol id="i-store" viewBox="0 0 24 24"><path d="M4 9 5.500 4h13L20 9"/><path d="M4 9a2.700 2.700 0 0 0 5.300 0 2.700 2.700 0 0 0 5.400 0A2.700 2.700 0 0 0 20 9"/><path d="M5 12v8h14v-8M10 20v-4h4v4"/></symbol>
+  <symbol id="i-scissors" viewBox="0 0 24 24"><circle cx="6" cy="6.500" r="2.500"/><circle cx="6" cy="17.500" r="2.500"/><path d="m8 8 12 9M8 16l12-9"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M7 9V3.500h10V9M7 17H4.500a1 1 0 0 1-1-1v-6a1 1 0 0 1 1-1h15a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H17"/><rect x="7" y="14" width="10" height="6.500" rx="1"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4M3 16h18v2.500a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V16M8 16v2.500a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V16"/><circle cx="7.500" cy="13" r=".8"/><circle cx="16.500" cy="13" r=".8"/></symbol>
+  <symbol id="i-type" viewBox="0 0 24 24"><path d="M5 6.500V5h14v1.500M12 5v14M9 19h6"/></symbol>
+  <symbol id="i-sign" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="10" rx="2"/><path d="M12 16v4M8.500 20h7M7 11h10"/></symbol>
+  <symbol id="i-frost" viewBox="0 0 24 24"><rect x="4" y="3.500" width="16" height="17" rx="2"/><path d="M4 12h16M12 3.500v17"/><path d="m7 7.500 2-2M14.500 15l2-2"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.200 6.800v.1"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8.500h2.500V5H14c-2.200 0-3.500 1.400-3.500 3.600V11H8v3.500h2.500V21H14v-6.500h2.500l.5-3.500h-3v-2c0-.3.200-.5.500-.5z"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><rect x="2.500" y="5.500" width="19" height="13" rx="4"/><path d="m10 9.500 5 2.500-5 2.500z"/></symbol>
+  <symbol id="i-map" viewBox="0 0 24 24"><path d="m3 6.500 6-2.500 6 2.500 6-2.500v13.500l-6 2.500-6-2.500-6 2.500z"/><path d="M9 4v13.500M15 6.500V20"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+    <a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="Sticker Sandblast Bali, ke beranda" width="232" height="40"></a>
+
+    <nav class="nav" id="site-nav" aria-label="Menu utama">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="index.html" data-nav="home">Beranda</a></li>
+        <li class="nav__item"><a class="nav__link" href="tentang-kami.html" data-nav="tentang">Tentang Kami</a></li>
+        <li class="nav__item" data-sub>
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="sub-layanan" data-nav="layanan">Layanan <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <ul class="nav__sub nav__sub--cols" id="sub-layanan">
+            <li><a class="nav__link" href="layanan.html#sticker-sandblast" data-real-url="/layanan/#sticker-sandblast">Sticker Sandblast</a></li>
+            <li><a class="nav__link" href="layanan.html#sticker-one-way-vision" data-real-url="/layanan/#sticker-one-way-vision">Sticker One Way Vision</a></li>
+            <li><a class="nav__link" href="layanan.html#sticker-riben" data-real-url="/layanan/#sticker-riben">Sticker Riben</a></li>
+            <li><a class="nav__link" href="layanan.html#kaca-film" data-real-url="/layanan/#kaca-film">Kaca Film</a></li>
+            <li><a class="nav__link" href="layanan.html#sticker-printing" data-real-url="/layanan/#sticker-printing">Sticker Printing</a></li>
+            <li><a class="nav__link" href="layanan.html#cutting-sticker" data-real-url="/layanan/#cutting-sticker">Cutting Sticker</a></li>
+            <li><a class="nav__link" href="layanan.html#wrapping-branding-mobil" data-real-url="/layanan/#wrapping-branding-mobil">Wrapping &amp; Branding Mobil</a></li>
+            <li><a class="nav__link" href="layanan.html#huruf-timbul-3d" data-real-url="/layanan/#huruf-timbul-3d">Huruf Timbul 3D</a></li>
+            <li><a class="nav__link" href="layanan.html#neon-box-papan-nama" data-real-url="/layanan/#neon-box-papan-nama">Neon Box &amp; Papan Nama</a></li>
+            <li class="nav__sub-all"><a class="nav__link nav__link--all" href="layanan.html" data-nav="layanan-all" data-real-url="/layanan/">Lihat semua layanan</a></li>
+            <li class="nav__sub-all"><a class="nav__link nav__link--all" href="layanan.html#harga" data-real-url="/layanan/#harga">Harga &amp; estimasi</a></li>
+          </ul>
+        </li>
+        <li class="nav__item" data-sub>
+          <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="sub-portofolio" data-nav="portofolio">Portofolio <svg class="icon" aria-hidden="true"><use href="#i-chevron-down"/></svg></button>
+          <ul class="nav__sub" id="sub-portofolio">
+            <li><a class="nav__link" href="portofolio.html#foto" data-nav="portofolio-foto" data-real-url="/portofolio/#foto">Galeri Foto</a></li>
+            <li><a class="nav__link" href="portofolio.html#video" data-real-url="/portofolio/#video">Galeri Video</a></li>
+          </ul>
+        </li>
+        <li class="nav__item"><a class="nav__link" href="artikel.html" data-nav="artikel">Artikel</a></li>
+        <li class="nav__item"><a class="nav__link" href="kontak.html" data-nav="kontak">Kontak</a></li>
+      </ul>
+    </nav>
+
+    <a class="btn btn--wa btn--sm site-header__cta" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg><span class="lbl-long">Chat WhatsApp</span><span class="lbl-short">Chat</span></a>
+
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Buka menu">
+      <svg class="icon icon-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon icon-close" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+</header>
+
+
+<main id="main">
+
+  <section class="page-hero page-hero--short" aria-labelledby="page-title">
+    <div class="container">
+      <p class="eyebrow">Internal</p>
+      <h1 class="page-hero__title" id="page-title">Style guide komponen</h1>
+      <p class="lead">Token desain, komponen dari DESIGN-BRIEF bagian 3, hero foto, dan komponen foto, masing-masing sekali, dengan nama kelas CSS. Header, footer, dan tombol mengambang tampil langsung di halaman ini.</p>
+      <ul class="sg-index" aria-label="Loncat ke komponen">
+        <li><a class="chip" href="#tokens">Token</a></li>
+        <li><a class="chip" href="#c01">1 Header</a></li>
+        <li><a class="chip" href="#c02">2 Tombol</a></li>
+        <li><a class="chip" href="#c03">3 Kartu layanan</a></li>
+        <li><a class="chip" href="#c04">4 Kartu nilai</a></li>
+        <li><a class="chip" href="#c06">5 Langkah</a></li>
+        <li><a class="chip" href="#c07">6 Kartu harga</a></li>
+        <li><a class="chip" href="#c08">7 Before/after</a></li>
+        <li><a class="chip" href="#c09">8 Galeri</a></li>
+        <li><a class="chip" href="#c10">9 Testimoni</a></li>
+        <li><a class="chip" href="#c11">10 FAQ</a></li>
+        <li><a class="chip" href="#c12">11 Artikel</a></li>
+        <li><a class="chip" href="#c13">12 CTA</a></li>
+        <li><a class="chip" href="#c14">13 Formulir</a></li>
+        <li><a class="chip" href="#c15">14 Footer</a></li>
+        <li><a class="chip" href="#c16">15 WhatsApp mengambang</a></li>
+        <li><a class="chip" href="#c17">16 Breadcrumb</a></li>
+        <li><a class="chip" href="#c18">17 Badge</a></li>
+        <li><a class="chip" href="#c19">18 Hero foto</a></li>
+        <li><a class="chip" href="#extra">Foto dan pendukung</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TOKENS -->
+  <section class="section sg" id="tokens">
+    <div class="container">
+      <div class="sg__head"><h2>Token</h2></div>
+      <p class="sg__cls">Warna: <code>--ink-900</code> dst. Semua ada di <code>:root</code> pada <code>styles.css</code>.</p>
+      <ul class="sg-swatches">
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--ink-900)"></span><span class="sg-swatch__meta"><b>--ink-900</b>#111111</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--ink-700)"></span><span class="sg-swatch__meta"><b>--ink-700</b>#2B2B2B</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--red-600)"></span><span class="sg-swatch__meta"><b>--red-600</b>#CA1317</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--red-500)"></span><span class="sg-swatch__meta"><b>--red-500</b>#EC2327</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--red-300)"></span><span class="sg-swatch__meta"><b>--red-300</b>#FF3333</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--red-800)"></span><span class="sg-swatch__meta"><b>--red-800</b>#A30F12</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--gray-50)"></span><span class="sg-swatch__meta"><b>--gray-50</b>#F8F8F8</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--frost)"></span><span class="sg-swatch__meta"><b>--frost</b>#F4F4F4</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--border)"></span><span class="sg-swatch__meta"><b>--border</b>#DDDDDD</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--text)"></span><span class="sg-swatch__meta"><b>--text</b>#333333</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--text-muted)"></span><span class="sg-swatch__meta"><b>--text-muted</b>#666666</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--wa-green)"></span><span class="sg-swatch__meta"><b>--wa-green</b>#0B7A3B</span></li>
+        <li class="sg-swatch"><span class="sg-swatch__chip" style="background:var(--white);border-bottom:1px solid var(--border)"></span><span class="sg-swatch__meta"><b>--white</b>#FFFFFF</span></li>
+      </ul>
+      <p class="sg__cls">Tipografi: <code>h1</code> 56/36px, <code>h2</code> 40/28px, <code>h3</code> 24/20px, isi 17/16px, kecil 14px (desktop/mobile).</p>
+      <p style="font:800 var(--fs-h1)/1.1 var(--font-head);color:var(--ink-900);margin:0 0 8px">Judul H1</p>
+      <p style="font:800 var(--fs-h2)/1.2 var(--font-head);color:var(--ink-900);margin:0 0 8px">Judul H2</p>
+      <p style="font:700 var(--fs-h3)/1.3 var(--font-head);color:var(--ink-900);margin:0 0 8px">Judul H3</p>
+      <p>Teks isi DM Sans. Kaca jadi buram, ruangan tetap terang.</p>
+      <p class="small text-muted">Teks kecil / caption 14px.</p>
+      <p class="sg__cls">Panel frosted <code>.frost</code> (motif khas) di atas blok merah; fallback solid otomatis bila <code>backdrop-filter</code> tidak didukung.</p>
+      <div class="sg-on-pane"><div class="frost sg-narrow" style="padding:20px"><strong>.frost</strong><br>rgba(255,255,255,.72) + blur(14px)</div></div>
+    </div>
+  </section>
+
+  <!-- 1 HEADER -->
+  <section class="section sg" id="c01">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">01</span><h2>Header</h2></div>
+      <p class="sg__cls">Tampil langsung di atas halaman. <code>.site-header</code> <code>.site-header__inner</code> <code>.brand</code> <code>.nav</code> <code>.nav__list</code> <code>.nav__item[data-sub]</code> <code>.nav__link</code> <code>.nav__toggle</code> <code>.nav__sub</code> <code>.menu-btn</code> <code>.site-header__cta</code>. Perilaku: <code>is-scrolled</code>, <code>is-open</code>, <code>html.menu-open</code>.</p>
+    </div>
+  </section>
+
+  <!-- 2 TOMBOL -->
+  <section class="section sg" id="c02">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">02</span><h2>Tombol dan tautan panah</h2></div>
+      <p class="sg__cls"><code>.btn</code> + <code>.btn--primary</code> <code>.btn--wa</code> <code>.btn--secondary</code> <code>.btn--secondary-light</code> <code>.btn--sm</code> <code>.btn--block</code>; tautan: <code>.link-arrow</code>; baris: <code>.btn-row</code>.</p>
+      <div class="sg-row">
+        <a class="btn btn--primary" href="#c02">Primer</a>
+        <a class="btn btn--wa" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Chat WhatsApp</a>
+        <a class="btn btn--secondary" href="#c02">Sekunder</a>
+        <a class="btn btn--primary btn--sm" href="#c02">Kecil (44px)</a>
+        <a class="link-arrow" href="#c02">Tautan teks <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="sg-on-pane"><a class="btn btn--secondary-light" href="#c02">Sekunder di latar gelap</a></div>
+    </div>
+  </section>
+
+  <!-- 3 KARTU LAYANAN -->
+  <section class="section sg section--alt" id="c03">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">03</span><h2>Kartu layanan</h2></div>
+      <p class="sg__cls"><code>.card-service</code> <code>__media</code> <code>__body</code> <code>__title</code> <code>__text</code> <code>__link</code>. Hover: border red-600 dan gambar zoom 1.03. Gambar: <code>&lt;img&gt;</code> langsung di <code>__media</code> (rasio 4:3, <code>object-fit: cover</code>), wajib <code>alt</code>, <code>width</code>, <code>height</code>.</p>
+      <div class="sg-narrow">
+        <article class="card-service">
+          <div class="card-service__media"><img src="assets/img/photos/svc-sandblast.webp" alt="Pintu kaca ganda dengan lapisan sandblast buram di dalam ruangan" width="900" height="600" loading="lazy" decoding="async"></div>
+          <div class="card-service__body">
+            <h3 class="card-service__title">Sticker Sandblast</h3>
+            <p class="card-service__text">Kaca tampak buram seperti disemprot pasir. Privasi terjaga, cahaya tetap masuk.</p>
+            <a class="card-service__link" href="layanan.html#sticker-sandblast">Lihat layanan <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 KARTU NILAI -->
+  <section class="section sg" id="c04">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">04</span><h2>Kartu nilai (icon box)</h2></div>
+      <p class="sg__cls"><code>.card-value</code> <code>__icon</code> <code>__title</code> <code>__text</code>. Ikon: <code>&lt;svg class="icon icon--lg"&gt;&lt;use href="#i-nama"/&gt;</code> dari sprite di header.</p>
+      <div class="sg-narrow">
+        <article class="card-value">
+          <span class="card-value__icon"><svg class="icon icon--lg" aria-hidden="true"><use href="#i-tag"/></svg></span>
+          <h3 class="card-value__title">Harga jelas</h3>
+          <p class="card-value__text">Kisaran harga per layanan ditampilkan di halaman Harga.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 6 LANGKAH -->
+  <section class="section sg" id="c06">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">05</span><h2>Langkah proses</h2></div>
+      <p class="sg__cls"><code>ol.steps</code> <code>.step</code> <code>__num</code> <code>__title</code> <code>__text</code> <code>__time</code>. Garis penghubung: horizontal di tablet/desktop, vertikal di mobile.</p>
+      <ol class="steps">
+        <li class="step"><span class="step__num" aria-hidden="true">1</span><h3 class="step__title">Konsultasi</h3><p class="step__text">Kirim foto kaca lewat WhatsApp.</p><span class="step__time"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Estimasi: respon di hari yang sama</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">2</span><h3 class="step__title">Ukur dan penawaran</h3><p class="step__text">Kaca diukur, harga final disepakati.</p><span class="step__time"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Estimasi: 1 hari</span></li>
+        <li class="step"><span class="step__num" aria-hidden="true">3</span><h3 class="step__title">Pemasangan</h3><p class="step__text">Teknisi memasang dan mengecek hasil.</p><span class="step__time"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>Estimasi: 1&ndash;2 hari</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 7 KARTU HARGA -->
+  <section class="section sg section--pane" id="c07">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">06</span><h2>Kartu harga / paket</h2></div>
+      <p class="sg__cls"><code>.card-price</code> <code>__name</code> <code>__price</code> <code>__from</code> <code>__amount</code> <code>__list</code> <code>__factors</code> <code>__cta</code>; varian <code>.card-price--frost</code> (kiri, panel frosted) dan biasa (kanan).</p>
+      <div class="grid grid--2">
+        <article class="card-price card-price--frost">
+          <h3 class="card-price__name">Sticker Sandblast</h3>
+          <p class="card-price__price"><span class="card-price__from">mulai dari</span><span class="card-price__amount">Rp 135.000 / m&sup2;</span></p>
+          <ul class="card-price__list check-list"><li>Bahan sticker sandblast</li><li>Pemasangan oleh teknisi</li></ul>
+          <p class="card-price__factors"><strong>Harga dipengaruhi:</strong> luas kaca, kerumitan motif, ketinggian.</p>
+          <a class="btn btn--wa btn--block card-price__cta" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Tanya harga</a>
+        </article>
+        <article class="card-price">
+          <h3 class="card-price__name">Sticker Riben</h3>
+          <p class="card-price__price"><span class="card-price__from">mulai dari</span><span class="card-price__amount">Rp 95.000 / m&sup2;</span></p>
+          <ul class="card-price__list check-list"><li>Bahan sticker riben</li><li>Pemasangan oleh teknisi</li></ul>
+          <p class="card-price__factors"><strong>Harga dipengaruhi:</strong> luas, desain, lokasi.</p>
+          <a class="btn btn--wa btn--block card-price__cta" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Tanya harga</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 BEFORE/AFTER -->
+  <section class="section sg" id="c08">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">07</span><h2>Before/after slider</h2></div>
+      <p class="sg__cls"><code>.ba-slider[data-ba]</code> <code>__layer--after</code> <code>__layer--before</code> <code>__tag</code> <code>__handle[role=slider]</code> <code>__knob</code>. Pointer, sentuh, dan keyboard (panah, Home/End, PageUp/PageDown, Shift = langkah 10). Nilai di <code>aria-valuenow</code> dan <code>--pos</code>. Lapisan berisi <code>&lt;img&gt;</code>. Simulasi dari satu foto: tambahkan <code>.ba--simulate</code> (pada <code>.ba-slider</code> atau <code>.ba-wrap</code>) dan pakai foto yang sama di kedua lapisan; lapisan <code>--after</code> otomatis diberi <code>blur(5px) brightness(1.08) saturate(.85)</code>. Beri keterangan lewat <code>p.ba__note</code>.</p>
+      <div class="ba-wrap ba--simulate">
+        <div class="ba-slider crop-marks" data-ba>
+          <div class="ba-slider__layer ba-slider__layer--after"><img src="assets/img/photos/g-03-conference.webp" alt="Sekat kaca ruang meeting sesudah dipasang sticker sandblast (ilustrasi)" width="900" height="602" loading="lazy" decoding="async"></div>
+          <div class="ba-slider__layer ba-slider__layer--before"><img src="assets/img/photos/g-03-conference.webp" alt="Sekat kaca ruang meeting sebelum dipasang sticker sandblast (ilustrasi)" width="900" height="602" loading="lazy" decoding="async"></div>
+          <span class="ba-slider__tag ba-slider__tag--before" aria-hidden="true">SEBELUM</span>
+          <span class="ba-slider__tag ba-slider__tag--after" aria-hidden="true">SESUDAH</span>
+          <div class="ba-slider__handle" role="slider" tabindex="0" aria-label="Bandingkan sebelum dan sesudah" aria-orientation="horizontal" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-valuetext="Sebelum 50%, sesudah 50%"><span class="ba-slider__knob"><svg class="icon" aria-hidden="true"><use href="#i-grip"/></svg></span></div>
+        </div>
+        <p class="ba__note"><svg class="icon" aria-hidden="true"><use href="#i-info"/></svg>Ilustrasi efek sandblast: kedua sisi memakai foto yang sama.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 GALERI -->
+  <section class="section sg section--frost" id="c09">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">08</span><h2>Galeri, filter, lightbox</h2></div>
+      <p class="sg__cls"><code>[data-gallery]</code> <code>.gallery__filters</code> <code>.chip[data-filter][aria-pressed]</code> <code>.gallery__status</code> <code>.gallery__grid</code> (masonry) <code>.gallery__item[data-category]</code> <code>.gallery__open</code> <code>.gallery__media</code> (berisi <code>&lt;img&gt;</code>) <code>.gallery__cap</code>. Keterangan lightbox diambil dari <code>.gallery__cap</code> / <code>figcaption</code>, atau <code>data-caption</code> pada <code>.gallery__item</code>. Lightbox dibuat oleh JS: Esc menutup, focus trap, panah kiri/kanan, geser di layar sentuh.</p>
+      <div class="gallery" data-gallery>
+        <div class="gallery__filters" role="group" aria-label="Filter kategori">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Semua</button>
+          <button class="chip" type="button" data-filter="sandblast" aria-pressed="false">Sandblast</button>
+          <button class="chip" type="button" data-filter="kaca-film" aria-pressed="false">Kaca Film</button>
+          <button class="chip" type="button" data-filter="cutting" aria-pressed="false">Cutting</button>
+        </div>
+        <p class="gallery__status" aria-live="polite"></p>
+        <div class="gallery__grid">
+          <figure class="gallery__item" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: sandblast pintu kaca, Canggu">
+              <span class="gallery__media"><img src="assets/img/photos/g-01-frosted-doors.webp" alt="Pintu kaca ganda berlapis sandblast buram dengan gagang panjang" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast pintu kaca</strong> &middot; Canggu</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: pemasangan kaca film, Ubud">
+              <span class="gallery__media"><img src="assets/img/photos/g-31-tint-installer.webp" alt="Teknisi menempelkan film pada kaca jendela kendaraan" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Pemasangan kaca film</strong> &middot; Ubud</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="cutting">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: cutting logo kaca toko, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-22-glass-lettering.webp" alt="Huruf emas hasil cutting menempel pada kaca jendela restoran" width="900" height="623" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Cutting logo kaca toko</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: sandblast sekat kantor, Renon">
+              <span class="gallery__media"><img src="assets/img/photos/g-03-conference.webp" alt="Ruang meeting dengan sekat kaca bermotif garis hasil sandblast" width="900" height="602" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast sekat kantor</strong> &middot; Renon</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 TESTIMONI -->
+  <section class="section sg" id="c10">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">09</span><h2>Kartu testimoni</h2></div>
+      <p class="sg__cls"><code>.card-quote</code> <code>__text</code> <code>__meta</code> <code>__source</code> <code>__name</code>. Tanpa bintang buatan; rating memakai <code>.review-summary</code>.</p>
+      <div class="sg-narrow">
+        <figure class="card-quote">
+          <blockquote class="card-quote__text"><p>Pelayanan memuaskan dan respon yg baik</p></blockquote>
+          <figcaption class="card-quote__meta"><span class="card-quote__source">Ulasan Google</span><cite class="card-quote__name">Pelanggan Google</cite></figcaption>
+        </figure>
+      </div>
+      <p class="mt-5"><span class="review-summary"><span class="review-summary__score">4,9</span><span class="review-summary__text"><strong>Ulasan Google</strong>dari 57 ulasan</span></span></p>
+    </div>
+  </section>
+
+  <!-- 11 FAQ -->
+  <section class="section sg section--alt" id="c11">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">10</span><h2>Accordion FAQ</h2></div>
+      <p class="sg__cls"><code>.accordion</code> <code>__item.is-open</code> <code>__heading</code> <code>__trigger[aria-expanded][aria-controls]</code> <code>__icon</code> <code>__panel</code> <code>__panel-inner</code> <code>__body</code>. Satu terbuka dalam satu waktu; panah atas/bawah, Home/End berpindah antar pertanyaan.</p>
+      <div class="accordion">
+        <div class="accordion__item is-open">
+          <h3 class="accordion__heading"><button class="accordion__trigger" type="button" id="sg-faq-1-t" aria-expanded="true" aria-controls="sg-faq-1">Pertanyaan pertama?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+          <div class="accordion__panel" id="sg-faq-1" role="region" aria-labelledby="sg-faq-1-t"><div class="accordion__panel-inner"><div class="accordion__body"><p>Jawaban singkat dan jelas.</p></div></div></div>
+        </div>
+        <div class="accordion__item">
+          <h3 class="accordion__heading"><button class="accordion__trigger" type="button" id="sg-faq-2-t" aria-expanded="false" aria-controls="sg-faq-2">Pertanyaan kedua?<span class="accordion__icon" aria-hidden="true"></span></button></h3>
+          <div class="accordion__panel" id="sg-faq-2" role="region" aria-labelledby="sg-faq-2-t"><div class="accordion__panel-inner"><div class="accordion__body"><p>Membuka item ini menutup item lain.</p></div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 KARTU ARTIKEL -->
+  <section class="section sg" id="c12">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">11</span><h2>Kartu artikel</h2></div>
+      <p class="sg__cls"><code>.card-post</code> <code>__media</code> <code>__body</code> <code>__cat</code> <code>__title</code> <code>__excerpt</code> <code>__meta</code>. Gambar: <code>&lt;img&gt;</code> langsung di <code>__media</code> (rasio 16:9).</p>
+      <div class="sg-narrow">
+        <article class="card-post">
+          <div class="card-post__media"><img src="assets/img/photos/g-31-tint-installer.webp" alt="Teknisi menempelkan film pada kaca jendela kendaraan" width="900" height="600" loading="lazy" decoding="async"></div>
+          <div class="card-post__body">
+            <span class="card-post__cat">Panduan memilih</span>
+            <h3 class="card-post__title"><a href="artikel-single.html">Sticker sandblast atau kaca film?</a></h3>
+            <p class="card-post__excerpt">Bedakan fungsi privasi, panas, dan tampilan.</p>
+            <p class="card-post__meta"><span>12 Agustus 2026</span><span>5 menit baca</span></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 CTA -->
+  <section class="sg" id="c13">
+    <div class="container"><div class="sg__head" style="padding-top:48px"><span class="sg__num">12</span><h2>Bar CTA akhir</h2></div>
+      <p class="sg__cls"><code>.cta-section</code> <code>.cta-bar</code> <code>__title</code> <code>__text</code>. Partial: <code>&lt;!--@include cta-final--&gt;</code>.</p></div>
+    <section class="cta-section" aria-labelledby="cta-title">
+  <div class="container">
+    <div class="cta-bar reveal">
+      <div>
+        <h2 class="cta-bar__title" id="cta-title">Kirim foto kaca Anda, kami hitungkan estimasinya.</h2>
+        <p class="cta-bar__text">Sebutkan jenis layanan dan ukuran kira-kira. Balasan awal lewat WhatsApp, dan harga final dipastikan setelah kaca diukur langsung.</p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--wa" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Chat WhatsApp</a>
+        <a class="btn btn--secondary-light" href="kontak.html#penawaran">Minta penawaran</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </section>
+
+  <!-- 14 FORMULIR -->
+  <section class="section sg section--alt" id="c14">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">13</span><h2>Formulir penawaran</h2></div>
+      <p class="sg__cls"><code>form.form-quote[data-mock]</code> <code>__grid</code> <code>.field</code> <code>__label</code> <code>__input</code> <code>__select</code> <code>__textarea</code> <code>__hint</code> <code>.field--full</code> <code>__privacy</code> <code>__status</code>. Atribut <code>data-mock</code> menahan pengiriman dan menampilkan pesan (mockup).</p>
+      <form class="form-quote sg-narrow-form" id="penawaran" action="#" data-mock="Ini mockup: formulir belum terhubung ke server." novalidate>
+        <div class="form-quote__grid">
+          <div class="field"><label class="field__label" for="f-nama">Nama</label><input class="field__input" id="f-nama" name="nama" type="text" autocomplete="name" required></div>
+          <div class="field"><label class="field__label" for="f-wa">Nomor WhatsApp</label><input class="field__input" id="f-wa" name="wa" type="tel" inputmode="tel" autocomplete="tel" placeholder="08xx-xxxx-xxxx" required></div>
+          <div class="field"><label class="field__label" for="f-layanan">Jenis layanan</label>
+            <select class="field__select" id="f-layanan" name="layanan"><option>Sticker Sandblast</option><option>Sticker One Way Vision</option><option>Sticker Riben</option><option>Kaca Film</option><option>Sticker Printing</option><option>Cutting Sticker</option><option>Wrapping &amp; Branding Mobil</option><option>Huruf Timbul 3D</option><option>Neon Box &amp; Papan Nama</option><option>Belum tahu, mohon saran</option></select></div>
+          <div class="field"><label class="field__label" for="f-ukuran">Perkiraan ukuran <span class="req">(opsional)</span></label><input class="field__input" id="f-ukuran" name="ukuran" type="text" placeholder="Mis. 2 pintu kaca, sekitar 6 m&sup2;"></div>
+          <div class="field"><label class="field__label" for="f-area">Area / kota</label>
+            <select class="field__select" id="f-area" name="area"><option>Denpasar</option><option>Ubud</option><option>Seminyak</option><option>Canggu</option><option>Sanur</option><option>Nusa Dua</option><option>Kuta</option><option>Lainnya</option></select></div>
+          <div class="field"><label class="field__label" for="f-foto">Foto kaca <span class="req">(opsional)</span></label><input class="field__input" id="f-foto" name="foto" type="file" accept="image/*" multiple><span class="field__hint">Format JPG atau PNG, maksimal 5 MB per foto.</span></div>
+          <div class="field field--full"><label class="field__label" for="f-catatan">Catatan <span class="req">(opsional)</span></label><textarea class="field__textarea" id="f-catatan" name="catatan" rows="3"></textarea></div>
+        </div>
+        <p class="form-quote__privacy">Nama, nomor WhatsApp, dan foto Anda hanya dipakai untuk menyiapkan penawaran. <a href="#" data-real-url="/kebijakan-privasi/">Kebijakan privasi</a></p>
+        <p class="form-quote__status" role="status" hidden></p>
+        <div class="btn-row"><button class="btn btn--primary" type="submit">Kirim permintaan penawaran</button></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 15-16 FOOTER + MENGAMBANG -->
+  <section class="section sg" id="c15">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">14</span><h2>Footer</h2></div>
+      <p class="sg__cls">Tampil langsung di bawah halaman. <code>.site-footer</code> <code>.footer__grid</code> <code>__brand</code> <code>__about</code> <code>__title</code> <code>__list</code> <code>__contact</code> <code>__social</code> <code>__bottom</code>. Empat kolom; sumber: <code>src/partials/footer.html</code>.</p>
+      <div class="sg__head" id="c16"><span class="sg__num">15</span><h2>Tombol WhatsApp mengambang</h2></div>
+      <p class="sg__cls">Tampil langsung: <code>.wa-float</code> (bulat 56px, kanan bawah, &ge;768px), <code>.mobile-bar</code> (bar bawah WhatsApp + Telepon, &le;767px). Keduanya ada di <code>footer.html</code>.</p>
+    </div>
+  </section>
+
+  <!-- 17 BREADCRUMB -->
+  <section class="section sg section--frost" id="c17">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">16</span><h2>Breadcrumb</h2></div>
+      <p class="sg__cls"><code>nav.breadcrumb</code> <code>__list</code> <code>__item</code>; halaman aktif memakai <code>aria-current="page"</code>. Wajib di semua halaman kecuali Home. Di atas hero foto pakai <code>.breadcrumb--light</code> (teks putih).</p>
+      <nav class="breadcrumb" aria-label="Contoh breadcrumb"><ol class="breadcrumb__list"><li class="breadcrumb__item"><a href="index.html">Beranda</a></li><li class="breadcrumb__item"><a href="layanan.html">Layanan</a></li><li class="breadcrumb__item" aria-current="page">Sticker Sandblast</li></ol></nav>
+    </div>
+  </section>
+
+  <!-- 18 BADGE -->
+  <section class="section sg section--pane" id="c18">
+    <div class="container">
+      <div class="sg__head"><span class="sg__num">17</span><h2>Badge kepercayaan (frosted)</h2></div>
+      <p class="sg__cls" style="color:var(--border)"><code>ul.badge-row</code> <code>li.badge-trust</code>. Klaim mengikuti <code>DEMO-DATA.md</code>. Di atas hero foto pakai <code>ul.hero-photo__badges</code> (lihat #c19).</p>
+      <ul class="badge-row">
+        <li class="badge-trust"><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg>4,9 dari 57 ulasan Google</li>
+        <li class="badge-trust"><svg class="icon" aria-hidden="true"><use href="#i-ruler"/></svg>Survey lokasi gratis</li>
+        <li class="badge-trust"><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Garansi pemasangan 30 hari</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 19 HERO FOTO -->
+  <section class="sg" id="c19">
+    <div class="container"><div class="sg__head" style="padding-top:48px"><span class="sg__num">18</span><h2>Hero foto (besar)</h2></div>
+      <p class="sg__cls"><code>section.hero-photo</code> + <code>--home</code> (tinggi <code>clamp(560px, 88vh, 860px)</code>) atau <code>--page</code> (<code>clamp(440px, 62vh, 620px)</code>). Anak: <code>img.hero-photo__img</code> (wajib <code>alt</code>, <code>width</code>, <code>height</code>; hero di atas lipatan pakai <code>fetchpriority="high"</code>, jangan <code>loading="lazy"</code>), <code>.hero-photo__overlay[aria-hidden]</code>, <code>.container.hero-photo__inner</code> (<code>.breadcrumb--light</code> hanya di halaman dalam, <code>.eyebrow--light</code>, <code>h1</code>, <code>.lead</code>, <code>.hero-photo__actions</code> dengan <code>.btn--outline-light</code>, <code>ul.hero-photo__badges</code>), dan opsional <code>aside.hero-photo__card.frost</code>. Titik fokus foto: <code>style="--focus:50% 30%"</code>. Overlay hero memakai token <code>--hero-a-start</code> (.88), <code>--hero-a-min</code> (.72), <code>--hero-a-end</code> (.30), <code>--hero-pill-a</code>, <code>--hero-chip-a</code>; teks tidak pernah berada di alfa di bawah <code>--hero-a-min</code> sehingga kontras tetap AA di atas foto putih (dicek <code>tools/contrast.py</code>). Judul di contoh ini <code>h3</code> berkelas <code>.hero-photo__title</code> karena halaman ini sudah punya satu <code>h1</code>; di halaman nyata pakai <code>h1</code>.</p></div>
+
+    <section class="hero-photo hero-photo--home" aria-label="Contoh hero Home" style="--focus:50% 55%">
+      <img class="hero-photo__img" src="assets/img/photos/hero-home.webp" alt="Lorong kantor modern dengan sekat kaca yang dilapisi sticker sandblast bermotif titik" width="1920" height="1280" loading="lazy" decoding="async">
+      <div class="hero-photo__overlay" aria-hidden="true"></div>
+      <div class="container hero-photo__inner">
+        <p class="eyebrow eyebrow--light">Sticker sandblast, one way vision, kaca film</p>
+        <h3 class="hero-photo__title">Kaca jadi privat, ruangan tetap terang</h3>
+        <p class="lead">Pemasangan sticker sandblast, one way vision, dan kaca film oleh teknisi berpengalaman untuk villa, hotel, kantor, dan toko di seluruh Bali.</p>
+        <div class="hero-photo__actions">
+          <a class="btn btn--wa" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Chat WhatsApp</a>
+          <a class="btn btn--outline-light" href="layanan.html#harga">Lihat harga</a>
+        </div>
+        <ul class="hero-photo__badges" aria-label="Keunggulan">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-message"/></svg>4,9 dari 57 ulasan Google</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-ruler"/></svg>Survey lokasi gratis</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-shield"/></svg>Garansi pemasangan 30 hari</li>
+        </ul>
+      </div>
+      <aside class="hero-photo__card frost" aria-label="Layanan satu hari">
+        <p class="hero-photo__card-title">One-day service</p>
+        <p>Pengerjaan selesai dalam 1 hari untuk luas hingga 20 m&sup2;, tergantung antrean.</p>
+      </aside>
+    </section>
+
+    <div class="container"><p class="sg__cls" style="margin-top:32px"><code>.hero-photo--page</code>: hero halaman dalam, dengan <code>nav.breadcrumb.breadcrumb--light</code> di atas eyebrow. Kartu <code>__card</code> di kanan bawah pada &ge;1025px dan menumpuk di bawah teks pada layar lebih kecil.</p></div>
+
+    <section class="hero-photo hero-photo--page" aria-label="Contoh hero halaman dalam" style="--focus:50% 40%">
+      <img class="hero-photo__img" src="assets/img/photos/hero-harga.webp" alt="Printer digital sedang mencetak desain pada bahan di bengkel produksi" width="1920" height="1280" loading="lazy" decoding="async">
+      <div class="hero-photo__overlay" aria-hidden="true"></div>
+      <div class="container hero-photo__inner">
+        <nav class="breadcrumb breadcrumb--light" aria-label="Contoh breadcrumb di hero"><ol class="breadcrumb__list"><li class="breadcrumb__item"><a href="index.html">Beranda</a></li><li class="breadcrumb__item" aria-current="page">Harga</li></ol></nav>
+        <p class="eyebrow eyebrow--light">Harga</p>
+        <h3 class="hero-photo__title">Harga jelas per meter persegi</h3>
+        <p class="lead">Kisaran harga tiap layanan, faktor yang memengaruhinya, dan cara menghitung perkiraan biaya.</p>
+        <div class="hero-photo__actions">
+          <a class="btn btn--primary" href="kontak.html">Minta penawaran</a>
+          <a class="btn btn--outline-light" href="layanan.html">Lihat layanan</a>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- FOTO DAN PENDUKUNG -->
+  <section class="section sg" id="extra">
+    <div class="container">
+      <div class="sg__head"><h2>Foto dan pendukung</h2></div>
+      <p class="sg__cls"><code>figure.photo</code> + rasio <code>--4x3</code> <code>--16x9</code> <code>--1x1</code> <code>--3x4</code> <code>--3x2</code> <code>--banner</code> (3:2 mobile, 21:9 &ge;768px) atau <code>--free</code> (rasio asli dari <code>width</code>/<code>height</code>). Isi: <code>&lt;img src alt width height loading="lazy" decoding="async"&gt;</code> dan <code>figcaption.photo__cap</code> opsional (panel frosted di kiri bawah). <code>object-fit: cover</code>, sudut 14px, tanpa layout shift. Semua foto demo dari Pexels: lihat <code>assets/img/photos/manifest.json</code>.</p>
+      <div class="grid grid--4">
+        <figure class="photo photo--4x3"><img src="assets/img/photos/g-03-conference.webp" alt="Ruang meeting dengan sekat kaca bermotif garis hasil sandblast" width="900" height="602" loading="lazy" decoding="async"><figcaption class="photo__cap">--4x3</figcaption></figure>
+        <figure class="photo photo--16x9"><img src="assets/img/photos/g-22-glass-lettering.webp" alt="Huruf emas pada kaca jendela restoran" width="900" height="623" loading="lazy" decoding="async"><figcaption class="photo__cap">--16x9</figcaption></figure>
+        <figure class="photo photo--1x1"><img src="assets/img/photos/g-04-bathroom-frost.webp" alt="Kamar mandi modern dengan pintu kaca shower dan wastafel" width="900" height="601" loading="lazy" decoding="async"><figcaption class="photo__cap">--1x1</figcaption></figure>
+        <figure class="photo photo--3x4"><img src="assets/img/photos/g-01-frosted-doors.webp" alt="Pintu kaca ganda berlapis sandblast buram dengan gagang panjang" width="900" height="1350" loading="lazy" decoding="async"><figcaption class="photo__cap">--3x4</figcaption></figure>
+      </div>
+      <div class="grid grid--2 mt-5">
+        <figure class="photo photo--3x2"><img src="assets/img/photos/g-31-tint-installer.webp" alt="Teknisi menempelkan film pada kaca jendela kendaraan" width="900" height="600" loading="lazy" decoding="async"><figcaption class="photo__cap">--3x2: pemasangan film kaca</figcaption></figure>
+        <figure class="photo photo--free"><img src="assets/img/photos/svc-sandblast.webp" alt="Pintu kaca ganda dengan lapisan sandblast buram di dalam ruangan" width="900" height="600" loading="lazy" decoding="async"><figcaption class="photo__cap">--free: rasio asli foto</figcaption></figure>
+      </div>
+      <p class="sg__cls mt-6"><code>.crop-marks</code> (tanda potong di empat sudut). <code>.callout</code> <code>.check-list</code> <code>.chip-list</code> <code>.mini-list</code> <code>.facts</code> <code>.motif</code> <code>.compare</code> <code>.area-map</code> <code>.factor-list</code> <code>.page-hero</code> <code>.promo-bar</code> <code>.hero</code>: contoh nyata ada di halaman Home, Layanan, dan Sticker Sandblast.</p>
+      <div class="callout"><svg class="icon icon--lg callout__icon" aria-hidden="true"><use href="#i-info"/></svg><div><p class="callout__title">Callout</p><p>Kotak informasi dengan ikon.</p></div></div>
+      <ul class="chip-list mt-5"><li><a class="chip" href="tentang-kami.html#area">Denpasar</a></li><li><a class="chip" href="tentang-kami.html#area">Ubud</a></li><li><a class="chip" href="tentang-kami.html#area">Canggu</a></li></ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html"><img src="assets/img/logo-light.svg" alt="Sticker Sandblast Bali, ke beranda" width="232" height="40"></a>
+        <p class="footer__about">Pemasangan sticker sandblast, one way vision, kaca film, dan cutting sticker untuk villa, hotel, restoran, kantor, dan toko di Bali.</p>
+        <ul class="footer__social" aria-label="Media sosial">
+          <li><a href="#" aria-label="Instagram Sticker Sandblast Bali"><svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg></a></li>
+          <li><a href="#" aria-label="Facebook Sticker Sandblast Bali"><svg class="icon" aria-hidden="true"><use href="#i-facebook"/></svg></a></li>
+          <li><a href="#" aria-label="YouTube Sticker Sandblast Bali"><svg class="icon" aria-hidden="true"><use href="#i-youtube"/></svg></a></li>
+        </ul>
+      </div>
+
+      <nav aria-labelledby="footer-menu-title">
+        <h2 class="footer__title" id="footer-menu-title">Menu utama</h2>
+        <ul class="footer__list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="tentang-kami.html">Tentang Kami</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+          <li><a href="layanan.html#harga">Harga &amp; estimasi</a></li>
+          <li><a href="portofolio.html">Portofolio</a></li>
+          <li><a href="portofolio.html#video">Galeri Video</a></li>
+          <li><a href="tentang-kami.html#testimoni">Testimoni</a></li>
+          <li><a href="tentang-kami.html#area">Area layanan</a></li>
+          <li><a href="kontak.html#faq">FAQ</a></li>
+          <li><a href="artikel.html">Artikel</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-layanan-title">
+        <h2 class="footer__title" id="footer-layanan-title">Layanan</h2>
+        <ul class="footer__list">
+          <li><a href="layanan.html#sticker-sandblast" data-real-url="/layanan/#sticker-sandblast">Sticker Sandblast</a></li>
+          <li><a href="layanan.html#sticker-one-way-vision" data-real-url="/layanan/#sticker-one-way-vision">Sticker One Way Vision</a></li>
+          <li><a href="layanan.html#sticker-riben" data-real-url="/layanan/#sticker-riben">Sticker Riben</a></li>
+          <li><a href="layanan.html#kaca-film" data-real-url="/layanan/#kaca-film">Kaca Film</a></li>
+          <li><a href="layanan.html#sticker-printing" data-real-url="/layanan/#sticker-printing">Sticker Printing</a></li>
+          <li><a href="layanan.html#cutting-sticker" data-real-url="/layanan/#cutting-sticker">Cutting Sticker</a></li>
+          <li><a href="layanan.html#wrapping-branding-mobil" data-real-url="/layanan/#wrapping-branding-mobil">Wrapping &amp; Branding Mobil</a></li>
+          <li><a href="layanan.html#huruf-timbul-3d" data-real-url="/layanan/#huruf-timbul-3d">Huruf Timbul 3D</a></li>
+          <li><a href="layanan.html#neon-box-papan-nama" data-real-url="/layanan/#neon-box-papan-nama">Neon Box &amp; Papan Nama</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="footer__title">Kontak</h2>
+        <ul class="footer__contact">
+          <li><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg><a href="https://wa.me/6282226920230" target="_blank" rel="noopener">WhatsApp 0822-2692-0230</a></li>
+          <li><svg class="icon icon--md" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+6282226920230">Telepon 0822-2692-0230</a></li>
+          <li><svg class="icon icon--md" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@stikersandblastbali.com">info@stikersandblastbali.com</a></li>
+          <li><svg class="icon icon--md" aria-hidden="true"><use href="#i-pin"/></svg><span>Jl. Cokroaminoto Gg. Jempiring No. 15, Ubung, Kec. Denpasar Utara, Kota Denpasar, Bali 80111</span></li>
+          <li><svg class="icon icon--md" aria-hidden="true"><use href="#i-clock"/></svg><span>Senin&ndash;Minggu, 09.00&ndash;17.00</span></li>
+          <li><svg class="icon icon--md" aria-hidden="true"><use href="#i-map"/></svg><a href="https://share.google/dNneYg3jdOXi641aj" target="_blank" rel="noopener">Buka di Google Maps</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2026 Sticker Sandblast Bali. Hak cipta dilindungi.</p>
+      <p><a href="#" data-real-url="/kebijakan-privasi/">Kebijakan privasi</a></p>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/6282226920230" target="_blank" rel="noopener" aria-label="Chat WhatsApp"><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+
+<div class="mobile-bar" role="group" aria-label="Hubungi kami">
+  <a class="btn btn--wa" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>WhatsApp</a>
+  <a class="btn btn--secondary" href="tel:+6282226920230"><svg class="icon icon--md" aria-hidden="true"><use href="#i-phone"/></svg>Telepon</a>
+</div>
+<script src="assets/js/app.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,387 @@
+<!--@title Portofolio Foto & Video Sticker Sandblast Bali-->
+<!--@description Galeri foto dan video pemasangan sticker sandblast, one way vision, kaca film, cutting, wrapping, dan huruf timbul di Bali. Filter per kategori.-->
+<!--@active portofolio portofolio-foto-->
+<!--@css pages-b.css-->
+<!--@js pages-b.js-->
+<!--@header-->
+
+<main id="main">
+
+  <!-- Hero foto -->
+  <section class="hero-photo hero-photo--page hero-photo--tall" aria-labelledby="page-title" style="--focus:50% 42%">
+    <img class="hero-photo__img" src="assets/img/photos/hero-portofolio.webp" alt="Tulisan emas pada kaca jendela restoran dengan dinding bata putih di sampingnya" width="1920" height="1329" fetchpriority="high" decoding="async">
+    <div class="hero-photo__overlay" aria-hidden="true"></div>
+    <div class="container hero-photo__inner">
+      <nav class="breadcrumb breadcrumb--light" aria-label="Breadcrumb">
+        <ol class="breadcrumb__list">
+          <li class="breadcrumb__item"><a href="index.html">Beranda</a></li>
+          <li class="breadcrumb__item" aria-current="page">Portofolio</li>
+        </ol>
+      </nav>
+      <p class="eyebrow eyebrow--light">Galeri foto</p>
+      <h1 id="page-title">Portofolio Sticker Sandblast, Kaca Film &amp; Cutting di Bali</h1>
+      <p class="lead">500+ proyek di Denpasar, Canggu, Seminyak, Ubud, Sanur, Nusa Dua, dan Kuta. Pilih kategori, lalu klik foto untuk memperbesarnya.</p>
+      <div class="hero-photo__actions">
+        <a class="btn btn--wa" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Chat WhatsApp</a>
+        <a class="btn btn--outline-light" href="#video">Lihat galeri video</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri: filter chip + 30 item, 12 tampil awal (pages-b.js) -->
+  <section class="section section--frost" id="foto" aria-labelledby="galeri-title">
+    <div class="container">
+      <h2 class="sr-only" id="galeri-title">Galeri foto pemasangan</h2>
+      <div class="gallery" data-gallery data-load-more="12">
+        <div class="gallery__filters" role="group" aria-label="Filter kategori portofolio">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Semua</button>
+          <button class="chip" type="button" data-filter="sandblast" aria-pressed="false">Sandblast</button>
+          <button class="chip" type="button" data-filter="one-way" aria-pressed="false">One Way</button>
+          <button class="chip" type="button" data-filter="riben" aria-pressed="false">Riben</button>
+          <button class="chip" type="button" data-filter="kaca-film" aria-pressed="false">Kaca Film</button>
+          <button class="chip" type="button" data-filter="cutting" aria-pressed="false">Cutting</button>
+          <button class="chip" type="button" data-filter="printing" aria-pressed="false">Printing</button>
+          <button class="chip" type="button" data-filter="wrapping" aria-pressed="false">Wrapping</button>
+          <button class="chip" type="button" data-filter="huruf-timbul" aria-pressed="false">Huruf Timbul</button>
+          <button class="chip" type="button" data-filter="neon-box" aria-pressed="false">Neon Box</button>
+        </div>
+        <p class="gallery__status" aria-live="polite"></p>
+        <div class="gallery__grid" id="portofolio-grid" data-stagger>
+          <figure class="gallery__item reveal" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Sandblast pintu kaca, Canggu">
+              <span class="gallery__media"><img src="assets/img/photos/g-01-frosted-doors.webp" alt="Pintu kaca ganda berlapis sandblast buram dengan gagang panjang" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast pintu kaca</strong> &middot; Canggu</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="wrapping">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Wrapping kap mobil, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-14-wrap-hood.webp" alt="Dua tangan menarik film wrapping putih di atas kap mobil gelap" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Wrapping kap mobil</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="riben">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Riben kaca kamar mandi, Seminyak">
+              <span class="gallery__media"><img src="assets/img/photos/g-04-bathroom-frost.webp" alt="Kamar mandi modern dengan pintu kaca shower dan wastafel" width="900" height="601" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Riben kaca kamar mandi</strong> &middot; Seminyak</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="neon-box">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Neon box studio tato, Kuta">
+              <span class="gallery__media"><img src="assets/img/photos/g-18-neon-tattoo.webp" alt="Papan neon hijau dan merah bertuliskan Electric Age Tattoo pada malam hari" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Neon box studio tato</strong> &middot; Kuta</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="one-way">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: One way vision etalase, Seminyak">
+              <span class="gallery__media"><img src="assets/img/photos/g-25-storefront.webp" alt="Fasad toko berpintu dan berjendela kayu dengan kaca bersekat" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>One way vision etalase</strong> &middot; Seminyak</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="printing cutting">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Printing dekal bodi mobil, Kuta">
+              <span class="gallery__media"><img src="assets/img/photos/g-13-car-decal.webp" alt="Bumper belakang mobil putih dengan dekal bunga sakura dan tulisan merah" width="900" height="1125" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Printing dekal bodi mobil</strong> &middot; Kuta</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Sandblast sekat kantor, Renon">
+              <span class="gallery__media"><img src="assets/img/photos/g-03-conference.webp" alt="Ruang meeting dengan meja panjang dan sekat kaca bermotif garis" width="900" height="602" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast sekat kantor</strong> &middot; Renon</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="huruf-timbul">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Huruf timbul kafe, Nusa Dua">
+              <span class="gallery__media"><img src="assets/img/photos/g-20-3d-cafe.webp" alt="Huruf timbul hitam bertuliskan CAFE pada dinding kayu yang disorot lampu" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Huruf timbul kafe</strong> &middot; Nusa Dua</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="neon-box">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Neon box toko lokal, Sanur">
+              <span class="gallery__media"><img src="assets/img/photos/g-19-neon-shoplocal.webp" alt="Neon merah muda bertuliskan Shop Local pada dinding beton abu-abu" width="900" height="900" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Neon box toko lokal</strong> &middot; Sanur</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="wrapping">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Wrapping kap dan bemper, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-16-wrap-front.webp" alt="Teknisi memanaskan film wrapping putih di kap mobil abu-abu dalam bengkel" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Wrapping kap dan bemper</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="kaca-film one-way">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Kaca film gelap ruang kantor, Renon">
+              <span class="gallery__media"><img src="assets/img/photos/g-06-office-dark.webp" alt="Ruang kantor berdinding kaca gelap dengan meja dan jendela besar" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Kaca film gelap ruang kantor</strong> &middot; Renon</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Sandblast motif daun, Ubud">
+              <span class="gallery__media"><img src="assets/img/photos/g-10-etched-leaf.webp" alt="Kaca dengan ukiran sandblast motif daun dan bunga bertekstur halus" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast motif daun</strong> &middot; Ubud</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Kaca film jendela lengkung kafe, Sanur">
+              <span class="gallery__media"><img src="assets/img/photos/g-28-cafe-windows.webp" alt="Jendela kaca lengkung besar sebuah kafe dengan kursi dan meja di dalam" width="900" height="1349" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Kaca film jendela lengkung kafe</strong> &middot; Sanur</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Kaca film kamar mandi villa, Ubud">
+              <span class="gallery__media"><img src="assets/img/photos/g-05-shower-glass.webp" alt="Kamar mandi krem dengan bilik shower kaca dan cermin" width="900" height="601" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Kaca film kamar mandi villa</strong> &middot; Ubud</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="cutting">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Cutting logo pintu kafe, Canggu">
+              <span class="gallery__media"><img src="assets/img/photos/g-23-cafe-logo-door.webp" alt="Logo melingkar pada kaca pintu sebuah kedai kopi dengan interior kayu" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Cutting logo pintu kafe</strong> &middot; Canggu</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="cutting printing">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Cutting sticker kaca belakang mobil, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-12-decal-window.webp" alt="Kaca belakang mobil putih dengan tulisan sticker besar" width="900" height="601" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Cutting sticker kaca belakang mobil</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="printing">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Printing logo kaca kafe, Seminyak">
+              <span class="gallery__media"><img src="assets/img/photos/g-24-cafe-glass-sign.webp" alt="Tulisan dan logo emas pada kaca depan kafe dengan pantulan jalan" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Printing logo kaca kafe</strong> &middot; Seminyak</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="wrapping">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Wrapping pintu mobil, Kuta">
+              <span class="gallery__media"><img src="assets/img/photos/g-15-wrap-glove.webp" alt="Tangan bersarung menempelkan film wrapping putih pada bodi mobil" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Wrapping pintu mobil</strong> &middot; Kuta</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Sandblast strip pintu kantor, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-07-corporate-doors.webp" alt="Pintu kaca kantor bergagang panjang dengan strip buram horizontal" width="900" height="1125" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast strip pintu kantor</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="huruf-timbul">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Huruf timbul kayu, Ubud">
+              <span class="gallery__media"><img src="assets/img/photos/g-21-3d-coffee.webp" alt="Huruf putih besar berbentuk timbul pada panel kayu, terbaca sebagian bertuliskan Coffee" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Huruf timbul kayu</strong> &middot; Ubud</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="neon-box">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Papan nama fasad showroom, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-26-store-logo-glass.webp" alt="Fasad showroom malam hari dengan logo menyala di atas pintu kaca" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Papan nama fasad showroom</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Sandblast motif titik koridor, Renon">
+              <span class="gallery__media"><img src="assets/img/photos/g-02-glass-hallway.webp" alt="Koridor kantor berdinding kaca dengan motif titik buram dan lantai kayu" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast motif titik koridor</strong> &middot; Renon</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="riben sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Riben strip pintu kaca, Sanur">
+              <span class="gallery__media"><img src="assets/img/photos/g-09-frosted-panels.webp" alt="Pintu kaca berbingkai hitam dengan panel buram bergaris di dinding bata" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Riben strip pintu kaca</strong> &middot; Sanur</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Pemasangan kaca film, Nusa Dua">
+              <span class="gallery__media"><img src="assets/img/photos/g-31-tint-installer.webp" alt="Teknisi bertato merapikan film pada kaca jendela mobil dengan pantulan wajah" width="900" height="600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Pemasangan kaca film</strong> &middot; Nusa Dua</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="sandblast">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Sandblast ukir potret, Ubud">
+              <span class="gallery__media"><img src="assets/img/photos/g-11-etched-portrait.webp" alt="Kaca dengan ukiran sandblast potret perempuan dalam bingkai lingkaran" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Sandblast ukir potret</strong> &middot; Ubud</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="wrapping kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Film pelindung bodi mobil, Nusa Dua">
+              <span class="gallery__media"><img src="assets/img/photos/g-32-film-luxury.webp" alt="Dua teknisi merentangkan film transparan di atas mobil sport abu-abu di showroom" width="900" height="599" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Film pelindung bodi mobil</strong> &middot; Nusa Dua</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="one-way">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: One way vision kaca kafe, Canggu">
+              <span class="gallery__media"><img src="assets/img/photos/g-27-cafe-interior.webp" alt="Interior kafe terlihat dari luar kaca dengan meja bulat dan lampu hangat" width="900" height="1350" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>One way vision kaca kafe</strong> &middot; Canggu</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="riben">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Riben pintu kaca kantor, Denpasar">
+              <span class="gallery__media"><img src="assets/img/photos/g-08-door-glass.webp" alt="Pintu kaca terbuka ke ruang kantor dengan kursi dan meja kerja" width="900" height="1200" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Riben pintu kaca kantor</strong> &middot; Denpasar</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Kaca film teras kafe, Sanur">
+              <span class="gallery__media"><img src="assets/img/photos/g-29-cafe-terrace.webp" alt="Teras kafe berkaca lebar dengan atap anyaman dan kursi kayu" width="900" height="1200" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Kaca film teras kafe</strong> &middot; Sanur</figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-category="kaca-film">
+            <button class="gallery__open" type="button" aria-label="Perbesar foto: Kaca film jendela mobil, Kuta">
+              <span class="gallery__media"><img src="assets/img/photos/g-30-window-tint.webp" alt="Teknisi memasang film pada kaca jendela mobil dari atas bodi" width="900" height="1600" loading="lazy" decoding="async"></span>
+              <span class="gallery__zoom" aria-hidden="true"><svg class="icon icon--sm"><use href="#i-expand"/></svg></span>
+            </button>
+            <figcaption class="gallery__cap"><strong>Kaca film jendela mobil</strong> &middot; Kuta</figcaption>
+          </figure>
+        </div>
+        <div class="gallery__more" data-more hidden>
+          <button class="btn btn--secondary" type="button" data-more-btn aria-controls="portofolio-grid">Muat lebih banyak</button>
+        </div>
+        <p class="gallery__note">Ingin hasil serupa di tempat Anda? Kirim foto kaca lewat WhatsApp untuk estimasi awal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri video: 6 kartu -->
+  <section class="section section--alt" id="video" aria-labelledby="video-list-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="eyebrow">Galeri video</p>
+        <h2 id="video-list-title">Lihat proses pemasangannya</h2>
+        <p class="lead">Video pemasangan menunjukkan cara film dipotong, ditempel, dan diratakan di kaca, dari sandblast sampai wrapping mobil. Klik salah satu video untuk melihat pratinjaunya, lalu tonton versi lengkapnya di YouTube.</p>
+      </div>
+      <div class="grid grid--3" data-stagger>
+
+        <article class="video-card reveal">
+          <button class="video-card__open" type="button" data-video-open aria-haspopup="dialog" aria-label="Buka video: Proses pasang sticker sandblast pada pintu kamar mandi, durasi 03:24">
+            <span class="photo photo--16x9"><img src="assets/img/photos/g-04-bathroom-frost.webp" alt="Kamar mandi modern dengan pintu kaca shower dan wastafel" width="900" height="601" loading="lazy" decoding="async"></span>
+            <span class="video-card__play" aria-hidden="true"><span class="frost video-card__disc"><svg class="icon icon--lg"><use href="#i-play"/></svg></span></span>
+            <span class="frost video-card__time">03:24</span>
+          </button>
+          <div>
+            <h3 class="video-card__title">Proses pasang sticker sandblast pada pintu kamar mandi</h3>
+            <p class="video-card__meta">Sticker Sandblast &middot; Canggu</p>
+            <p class="video-card__desc">Dari membersihkan kaca sampai meratakan gelembung: urutan pemasangan sticker sandblast pada pintu kaca kamar mandi villa.</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <button class="video-card__open" type="button" data-video-open aria-haspopup="dialog" aria-label="Buka video: Pemasangan one way vision pada etalase toko, durasi 02:48">
+            <span class="photo photo--16x9" style="--focus:50% 35%"><img src="assets/img/photos/g-25-storefront.webp" alt="Fasad toko berpintu dan berjendela kayu dengan kaca bersekat" width="900" height="1350" loading="lazy" decoding="async"></span>
+            <span class="video-card__play" aria-hidden="true"><span class="frost video-card__disc"><svg class="icon icon--lg"><use href="#i-play"/></svg></span></span>
+            <span class="frost video-card__time">02:48</span>
+          </button>
+          <div>
+            <h3 class="video-card__title">Pemasangan one way vision pada etalase toko</h3>
+            <p class="video-card__meta">Sticker One Way Vision &middot; Seminyak</p>
+            <p class="video-card__desc">Cara sticker one way vision bergambar dipasang di etalase, agar gambar tampil dari luar dan pandangan dari dalam tetap terbuka.</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <button class="video-card__open" type="button" data-video-open aria-haspopup="dialog" aria-label="Buka video: Pemasangan kaca film pada jendela kantor, durasi 04:10">
+            <span class="photo photo--16x9"><img src="assets/img/photos/g-06-office-dark.webp" alt="Ruang kantor berdinding kaca gelap dengan meja dan jendela besar" width="900" height="600" loading="lazy" decoding="async"></span>
+            <span class="video-card__play" aria-hidden="true"><span class="frost video-card__disc"><svg class="icon icon--lg"><use href="#i-play"/></svg></span></span>
+            <span class="frost video-card__time">04:10</span>
+          </button>
+          <div>
+            <h3 class="video-card__title">Pemasangan kaca film pada jendela kantor</h3>
+            <p class="video-card__meta">Kaca Film &middot; Renon</p>
+            <p class="video-card__desc">Langkah memasang kaca film pada jendela lebar: ukur, potong, tempel, lalu rapikan tepi.</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <button class="video-card__open" type="button" data-video-open aria-haspopup="dialog" aria-label="Buka video: Proses cutting sticker logo dari vinyl, durasi 02:15">
+            <span class="photo photo--16x9"><img src="assets/img/photos/svc-cutting.webp" alt="Sticker vinyl putih hasil cutting berbentuk huruf pada kaca mobil" width="900" height="601" loading="lazy" decoding="async"></span>
+            <span class="video-card__play" aria-hidden="true"><span class="frost video-card__disc"><svg class="icon icon--lg"><use href="#i-play"/></svg></span></span>
+            <span class="frost video-card__time">02:15</span>
+          </button>
+          <div>
+            <h3 class="video-card__title">Proses cutting sticker logo dari vinyl</h3>
+            <p class="video-card__meta">Cutting Sticker &middot; Denpasar</p>
+            <p class="video-card__desc">Logo dipotong dari vinyl warna, dibersihkan dari sisa bahan, lalu dipindahkan ke kaca dengan transfer tape.</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <button class="video-card__open" type="button" data-video-open aria-haspopup="dialog" aria-label="Buka video: Wrapping dan branding mobil operasional, durasi 05:32">
+            <span class="photo photo--16x9"><img src="assets/img/photos/g-16-wrap-front.webp" alt="Teknisi memanaskan film wrapping putih di kap mobil abu-abu dalam bengkel" width="900" height="600" loading="lazy" decoding="async"></span>
+            <span class="video-card__play" aria-hidden="true"><span class="frost video-card__disc"><svg class="icon icon--lg"><use href="#i-play"/></svg></span></span>
+            <span class="frost video-card__time">05:32</span>
+          </button>
+          <div>
+            <h3 class="video-card__title">Wrapping dan branding mobil operasional</h3>
+            <p class="video-card__meta">Wrapping &amp; Branding Mobil &middot; Denpasar</p>
+            <p class="video-card__desc">Film wrapping dipanaskan dan diratakan di body mobil operasional sampai menempel rapi tanpa gelembung.</p>
+          </div>
+        </article>
+
+        <article class="video-card reveal">
+          <button class="video-card__open" type="button" data-video-open aria-haspopup="dialog" aria-label="Buka video: Pemasangan huruf timbul dan neon box papan nama, durasi 03:48">
+            <span class="photo photo--16x9"><img src="assets/img/photos/g-20-3d-cafe.webp" alt="Huruf timbul hitam bertuliskan CAFE pada dinding kayu yang disorot lampu" width="900" height="600" loading="lazy" decoding="async"></span>
+            <span class="video-card__play" aria-hidden="true"><span class="frost video-card__disc"><svg class="icon icon--lg"><use href="#i-play"/></svg></span></span>
+            <span class="frost video-card__time">03:48</span>
+          </button>
+          <div>
+            <h3 class="video-card__title">Pemasangan huruf timbul dan neon box papan nama</h3>
+            <p class="video-card__meta">Huruf Timbul &amp; Neon Box &middot; Nusa Dua</p>
+            <p class="video-card__desc">Huruf timbul 3D dan neon box dipasang di fasad: posisi dicek lebih dulu, baru dikunci.</p>
+          </div>
+        </article>
+
+      </div>
+      <p class="small text-muted mt-5">Video lengkap tersedia di kanal YouTube Sticker Sandblast Bali.</p>
+      <div class="section__foot"><a class="link-arrow" href="#foto">Lihat galeri foto <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a></div>
+    </div>
+  </section>
+
+  <!--@include cta-final-->
+
+</main>
+
+<!-- Modal video: poster besar + judul + keterangan + tombol YouTube (pages-b.js) -->
+<div class="modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" aria-describedby="video-modal-desc" hidden>
+  <div class="modal__panel">
+    <div class="modal__head">
+      <h2 class="modal__title" id="video-modal-title">Video</h2>
+      <button class="modal__close" type="button" aria-label="Tutup video"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+    <figure class="photo photo--16x9 modal__stage">
+      <img data-video-poster src="assets/img/photos/g-04-bathroom-frost.webp" alt="Kamar mandi modern dengan pintu kaca shower dan wastafel" width="900" height="601" loading="lazy" decoding="async">
+      <span class="frost video-card__time" data-video-time>03:24</span>
+    </figure>
+    <p class="modal__meta" data-video-meta>Sticker Sandblast &middot; Canggu</p>
+    <p class="modal__desc" id="video-modal-desc" data-video-desc></p>
+    <div class="modal__actions">
+      <a class="btn btn--primary" href="#" data-video-yt><svg class="icon icon--md" aria-hidden="true"><use href="#i-youtube"/></svg>Tonton di YouTube</a>
+      <a class="btn btn--wa" href="https://wa.me/6282226920230" target="_blank" rel="noopener"><svg class="icon icon--md" aria-hidden="true"><use href="#i-whatsapp"/></svg>Tanya pemasangan serupa</a>
+    </div>
+  </div>
+</div>
+
+<!--@footer-->

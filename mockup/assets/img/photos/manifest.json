@@ -1,0 +1,641 @@
+{
+ "hero-home": {
+  "file": "assets/img/photos/hero-home.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 8477485,
+  "source": "https://www.pexels.com/photo/8477485/",
+  "kind": "hero",
+  "bytes": 103556
+ },
+ "hero-layanan": {
+  "file": "assets/img/photos/hero-layanan.webp",
+  "width": 1920,
+  "height": 1285,
+  "pexels_id": 5869295,
+  "source": "https://www.pexels.com/photo/5869295/",
+  "kind": "hero",
+  "bytes": 102464
+ },
+ "hero-sandblast": {
+  "file": "assets/img/photos/hero-sandblast.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 29508048,
+  "source": "https://www.pexels.com/photo/29508048/",
+  "kind": "hero",
+  "bytes": 32766
+ },
+ "hero-tentang": {
+  "file": "assets/img/photos/hero-tentang.webp",
+  "width": 1920,
+  "height": 1440,
+  "pexels_id": 31788399,
+  "source": "https://www.pexels.com/photo/31788399/",
+  "kind": "hero",
+  "bytes": 176198
+ },
+ "hero-harga": {
+  "file": "assets/img/photos/hero-harga.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 5727002,
+  "source": "https://www.pexels.com/photo/5727002/",
+  "kind": "hero",
+  "bytes": 108060
+ },
+ "hero-portofolio": {
+  "file": "assets/img/photos/hero-portofolio.webp",
+  "width": 1920,
+  "height": 1329,
+  "pexels_id": 375895,
+  "source": "https://www.pexels.com/photo/375895/",
+  "kind": "hero",
+  "bytes": 134200
+ },
+ "hero-galeri-video": {
+  "file": "assets/img/photos/hero-galeri-video.webp",
+  "width": 1920,
+  "height": 1281,
+  "pexels_id": 10162529,
+  "source": "https://www.pexels.com/photo/10162529/",
+  "kind": "hero",
+  "bytes": 138354
+ },
+ "hero-testimoni": {
+  "file": "assets/img/photos/hero-testimoni.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 20522462,
+  "source": "https://www.pexels.com/photo/20522462/",
+  "kind": "hero",
+  "bytes": 127794
+ },
+ "hero-area": {
+  "file": "assets/img/photos/hero-area.webp",
+  "width": 1920,
+  "height": 1440,
+  "pexels_id": 35043038,
+  "source": "https://www.pexels.com/photo/35043038/",
+  "kind": "hero",
+  "bytes": 511096
+ },
+ "hero-area-denpasar": {
+  "file": "assets/img/photos/hero-area-denpasar.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 19570521,
+  "source": "https://www.pexels.com/photo/19570521/",
+  "kind": "hero",
+  "bytes": 367610
+ },
+ "hero-faq": {
+  "file": "assets/img/photos/hero-faq.webp",
+  "width": 1920,
+  "height": 1440,
+  "pexels_id": 37567709,
+  "source": "https://www.pexels.com/photo/37567709/",
+  "kind": "hero",
+  "bytes": 120700
+ },
+ "hero-artikel": {
+  "file": "assets/img/photos/hero-artikel.webp",
+  "width": 1920,
+  "height": 1278,
+  "pexels_id": 20051464,
+  "source": "https://www.pexels.com/photo/20051464/",
+  "kind": "hero",
+  "bytes": 187362
+ },
+ "hero-artikel-single": {
+  "file": "assets/img/photos/hero-artikel-single.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 7878535,
+  "source": "https://www.pexels.com/photo/7878535/",
+  "kind": "hero",
+  "bytes": 244784
+ },
+ "hero-kontak": {
+  "file": "assets/img/photos/hero-kontak.webp",
+  "width": 1920,
+  "height": 1280,
+  "pexels_id": 5483051,
+  "source": "https://www.pexels.com/photo/5483051/",
+  "kind": "hero",
+  "bytes": 41194
+ },
+ "svc-sandblast": {
+  "file": "assets/img/photos/svc-sandblast.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 29508048,
+  "source": "https://www.pexels.com/photo/29508048/",
+  "kind": "card",
+  "bytes": 6730
+ },
+ "svc-one-way": {
+  "file": "assets/img/photos/svc-one-way.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 5483051,
+  "source": "https://www.pexels.com/photo/5483051/",
+  "kind": "card",
+  "bytes": 15518
+ },
+ "svc-riben": {
+  "file": "assets/img/photos/svc-riben.webp",
+  "width": 900,
+  "height": 675,
+  "pexels_id": 37567709,
+  "source": "https://www.pexels.com/photo/37567709/",
+  "kind": "card",
+  "bytes": 32200
+ },
+ "svc-kaca-film": {
+  "file": "assets/img/photos/svc-kaca-film.webp",
+  "width": 900,
+  "height": 602,
+  "pexels_id": 5869295,
+  "source": "https://www.pexels.com/photo/5869295/",
+  "kind": "card",
+  "bytes": 32550
+ },
+ "svc-printing": {
+  "file": "assets/img/photos/svc-printing.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 5727002,
+  "source": "https://www.pexels.com/photo/5727002/",
+  "kind": "card",
+  "bytes": 36876
+ },
+ "svc-cutting": {
+  "file": "assets/img/photos/svc-cutting.webp",
+  "width": 900,
+  "height": 601,
+  "pexels_id": 39356278,
+  "source": "https://www.pexels.com/photo/39356278/",
+  "kind": "card",
+  "bytes": 14456
+ },
+ "svc-wrapping": {
+  "file": "assets/img/photos/svc-wrapping.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 10126666,
+  "source": "https://www.pexels.com/photo/10126666/",
+  "kind": "card",
+  "bytes": 28108
+ },
+ "svc-huruf-timbul": {
+  "file": "assets/img/photos/svc-huruf-timbul.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 7821344,
+  "source": "https://www.pexels.com/photo/7821344/",
+  "kind": "card",
+  "bytes": 25366
+ },
+ "svc-neon-box": {
+  "file": "assets/img/photos/svc-neon-box.webp",
+  "width": 900,
+  "height": 601,
+  "pexels_id": 2448672,
+  "source": "https://www.pexels.com/photo/2448672/",
+  "kind": "card",
+  "bytes": 45120
+ },
+ "g-01-frosted-doors": {
+  "file": "assets/img/photos/g-01-frosted-doors.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 13094990,
+  "source": "https://www.pexels.com/photo/13094990/",
+  "kind": "card",
+  "bytes": 20622
+ },
+ "g-02-glass-hallway": {
+  "file": "assets/img/photos/g-02-glass-hallway.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 8477485,
+  "source": "https://www.pexels.com/photo/8477485/",
+  "kind": "card",
+  "bytes": 36234
+ },
+ "g-03-conference": {
+  "file": "assets/img/photos/g-03-conference.webp",
+  "width": 900,
+  "height": 602,
+  "pexels_id": 5869295,
+  "source": "https://www.pexels.com/photo/5869295/",
+  "kind": "card",
+  "bytes": 32550
+ },
+ "g-04-bathroom-frost": {
+  "file": "assets/img/photos/g-04-bathroom-frost.webp",
+  "width": 900,
+  "height": 601,
+  "pexels_id": 7534282,
+  "source": "https://www.pexels.com/photo/7534282/",
+  "kind": "card",
+  "bytes": 27266
+ },
+ "g-05-shower-glass": {
+  "file": "assets/img/photos/g-05-shower-glass.webp",
+  "width": 900,
+  "height": 601,
+  "pexels_id": 7005268,
+  "source": "https://www.pexels.com/photo/7005268/",
+  "kind": "card",
+  "bytes": 24896
+ },
+ "g-06-office-dark": {
+  "file": "assets/img/photos/g-06-office-dark.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 5483051,
+  "source": "https://www.pexels.com/photo/5483051/",
+  "kind": "card",
+  "bytes": 15518
+ },
+ "g-07-corporate-doors": {
+  "file": "assets/img/photos/g-07-corporate-doors.webp",
+  "width": 900,
+  "height": 1125,
+  "pexels_id": 20461333,
+  "source": "https://www.pexels.com/photo/20461333/",
+  "kind": "card",
+  "bytes": 45644
+ },
+ "g-08-door-glass": {
+  "file": "assets/img/photos/g-08-door-glass.webp",
+  "width": 900,
+  "height": 1200,
+  "pexels_id": 6008847,
+  "source": "https://www.pexels.com/photo/6008847/",
+  "kind": "card",
+  "bytes": 38684
+ },
+ "g-09-frosted-panels": {
+  "file": "assets/img/photos/g-09-frosted-panels.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 14806237,
+  "source": "https://www.pexels.com/photo/14806237/",
+  "kind": "card",
+  "bytes": 35296
+ },
+ "g-10-etched-leaf": {
+  "file": "assets/img/photos/g-10-etched-leaf.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 7878535,
+  "source": "https://www.pexels.com/photo/7878535/",
+  "kind": "card",
+  "bytes": 88320
+ },
+ "g-11-etched-portrait": {
+  "file": "assets/img/photos/g-11-etched-portrait.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 13922244,
+  "source": "https://www.pexels.com/photo/13922244/",
+  "kind": "card",
+  "bytes": 65510
+ },
+ "g-12-decal-window": {
+  "file": "assets/img/photos/g-12-decal-window.webp",
+  "width": 900,
+  "height": 601,
+  "pexels_id": 27703375,
+  "source": "https://www.pexels.com/photo/27703375/",
+  "kind": "card",
+  "bytes": 18434
+ },
+ "g-13-car-decal": {
+  "file": "assets/img/photos/g-13-car-decal.webp",
+  "width": 900,
+  "height": 1125,
+  "pexels_id": 18461703,
+  "source": "https://www.pexels.com/photo/18461703/",
+  "kind": "card",
+  "bytes": 42656
+ },
+ "g-14-wrap-hood": {
+  "file": "assets/img/photos/g-14-wrap-hood.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 10126661,
+  "source": "https://www.pexels.com/photo/10126661/",
+  "kind": "card",
+  "bytes": 19066
+ },
+ "g-15-wrap-glove": {
+  "file": "assets/img/photos/g-15-wrap-glove.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 10126663,
+  "source": "https://www.pexels.com/photo/10126663/",
+  "kind": "card",
+  "bytes": 21120
+ },
+ "g-16-wrap-front": {
+  "file": "assets/img/photos/g-16-wrap-front.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 10126657,
+  "source": "https://www.pexels.com/photo/10126657/",
+  "kind": "card",
+  "bytes": 32152
+ },
+ "g-17-wrap-blue": {
+  "file": "assets/img/photos/g-17-wrap-blue.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 10162529,
+  "source": "https://www.pexels.com/photo/10162529/",
+  "kind": "card",
+  "bytes": 54696
+ },
+ "g-18-neon-tattoo": {
+  "file": "assets/img/photos/g-18-neon-tattoo.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 12735488,
+  "source": "https://www.pexels.com/photo/12735488/",
+  "kind": "card",
+  "bytes": 27526
+ },
+ "g-19-neon-shoplocal": {
+  "file": "assets/img/photos/g-19-neon-shoplocal.webp",
+  "width": 900,
+  "height": 900,
+  "pexels_id": 6091046,
+  "source": "https://www.pexels.com/photo/6091046/",
+  "kind": "card",
+  "bytes": 88260
+ },
+ "g-20-3d-cafe": {
+  "file": "assets/img/photos/g-20-3d-cafe.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 12944739,
+  "source": "https://www.pexels.com/photo/12944739/",
+  "kind": "card",
+  "bytes": 39130
+ },
+ "g-21-3d-coffee": {
+  "file": "assets/img/photos/g-21-3d-coffee.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 31777029,
+  "source": "https://www.pexels.com/photo/31777029/",
+  "kind": "card",
+  "bytes": 22638
+ },
+ "g-22-glass-lettering": {
+  "file": "assets/img/photos/g-22-glass-lettering.webp",
+  "width": 900,
+  "height": 623,
+  "pexels_id": 375895,
+  "source": "https://www.pexels.com/photo/375895/",
+  "kind": "card",
+  "bytes": 45786
+ },
+ "g-23-cafe-logo-door": {
+  "file": "assets/img/photos/g-23-cafe-logo-door.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 16892092,
+  "source": "https://www.pexels.com/photo/16892092/",
+  "kind": "card",
+  "bytes": 47888
+ },
+ "g-24-cafe-glass-sign": {
+  "file": "assets/img/photos/g-24-cafe-glass-sign.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 13023293,
+  "source": "https://www.pexels.com/photo/13023293/",
+  "kind": "card",
+  "bytes": 37736
+ },
+ "g-25-storefront": {
+  "file": "assets/img/photos/g-25-storefront.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 11077632,
+  "source": "https://www.pexels.com/photo/11077632/",
+  "kind": "card",
+  "bytes": 74558
+ },
+ "g-26-store-logo-glass": {
+  "file": "assets/img/photos/g-26-store-logo-glass.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 5864157,
+  "source": "https://www.pexels.com/photo/5864157/",
+  "kind": "card",
+  "bytes": 27148
+ },
+ "g-27-cafe-interior": {
+  "file": "assets/img/photos/g-27-cafe-interior.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 33388624,
+  "source": "https://www.pexels.com/photo/33388624/",
+  "kind": "card",
+  "bytes": 77890
+ },
+ "g-28-cafe-windows": {
+  "file": "assets/img/photos/g-28-cafe-windows.webp",
+  "width": 900,
+  "height": 1349,
+  "pexels_id": 19364784,
+  "source": "https://www.pexels.com/photo/19364784/",
+  "kind": "card",
+  "bytes": 94716
+ },
+ "g-29-cafe-terrace": {
+  "file": "assets/img/photos/g-29-cafe-terrace.webp",
+  "width": 900,
+  "height": 1200,
+  "pexels_id": 11854678,
+  "source": "https://www.pexels.com/photo/11854678/",
+  "kind": "card",
+  "bytes": 214594
+ },
+ "g-30-window-tint": {
+  "file": "assets/img/photos/g-30-window-tint.webp",
+  "width": 900,
+  "height": 1600,
+  "pexels_id": 31154212,
+  "source": "https://www.pexels.com/photo/31154212/",
+  "kind": "card",
+  "bytes": 72396
+ },
+ "g-31-tint-installer": {
+  "file": "assets/img/photos/g-31-tint-installer.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 20522462,
+  "source": "https://www.pexels.com/photo/20522462/",
+  "kind": "card",
+  "bytes": 39662
+ },
+ "g-32-film-luxury": {
+  "file": "assets/img/photos/g-32-film-luxury.webp",
+  "width": 900,
+  "height": 599,
+  "pexels_id": 20051464,
+  "source": "https://www.pexels.com/photo/20051464/",
+  "kind": "card",
+  "bytes": 59284
+ },
+ "area-denpasar": {
+  "file": "assets/img/photos/area-denpasar.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 11077632,
+  "source": "https://www.pexels.com/photo/11077632/",
+  "kind": "card",
+  "bytes": 74558
+ },
+ "area-ubud": {
+  "file": "assets/img/photos/area-ubud.webp",
+  "width": 900,
+  "height": 1200,
+  "pexels_id": 2614738,
+  "source": "https://www.pexels.com/photo/2614738/",
+  "kind": "card",
+  "bytes": 226868
+ },
+ "area-seminyak": {
+  "file": "assets/img/photos/area-seminyak.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 19570521,
+  "source": "https://www.pexels.com/photo/19570521/",
+  "kind": "card",
+  "bytes": 111524
+ },
+ "area-canggu": {
+  "file": "assets/img/photos/area-canggu.webp",
+  "width": 900,
+  "height": 1291,
+  "pexels_id": 2480608,
+  "source": "https://www.pexels.com/photo/2480608/",
+  "kind": "card",
+  "bytes": 292304
+ },
+ "area-sanur": {
+  "file": "assets/img/photos/area-sanur.webp",
+  "width": 900,
+  "height": 1200,
+  "pexels_id": 8159775,
+  "source": "https://www.pexels.com/photo/8159775/",
+  "kind": "card",
+  "bytes": 113848
+ },
+ "area-nusa-dua": {
+  "file": "assets/img/photos/area-nusa-dua.webp",
+  "width": 900,
+  "height": 675,
+  "pexels_id": 35043038,
+  "source": "https://www.pexels.com/photo/35043038/",
+  "kind": "card",
+  "bytes": 134676
+ },
+ "area-kuta": {
+  "file": "assets/img/photos/area-kuta.webp",
+  "width": 900,
+  "height": 1349,
+  "pexels_id": 37526426,
+  "source": "https://www.pexels.com/photo/37526426/",
+  "kind": "card",
+  "bytes": 158302
+ },
+ "workshop-plotter": {
+  "file": "assets/img/photos/workshop-plotter.webp",
+  "width": 900,
+  "height": 1353,
+  "pexels_id": 20042067,
+  "source": "https://www.pexels.com/photo/20042067/",
+  "kind": "card",
+  "bytes": 43012
+ },
+ "workshop-printing-hall": {
+  "file": "assets/img/photos/workshop-printing-hall.webp",
+  "width": 900,
+  "height": 675,
+  "pexels_id": 31788399,
+  "source": "https://www.pexels.com/photo/31788399/",
+  "kind": "card",
+  "bytes": 62194
+ },
+ "workshop-printer": {
+  "file": "assets/img/photos/workshop-printer.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 5727002,
+  "source": "https://www.pexels.com/photo/5727002/",
+  "kind": "card",
+  "bytes": 36876
+ },
+ "workshop-installer": {
+  "file": "assets/img/photos/workshop-installer.webp",
+  "width": 900,
+  "height": 600,
+  "pexels_id": 10126666,
+  "source": "https://www.pexels.com/photo/10126666/",
+  "kind": "card",
+  "bytes": 28108
+ },
+ "clinic-reception": {
+  "file": "assets/img/photos/clinic-reception.webp",
+  "width": 900,
+  "height": 1348,
+  "pexels_id": 6809645,
+  "source": "https://www.pexels.com/photo/6809645/",
+  "kind": "card",
+  "bytes": 26498
+ },
+ "hotel-reception": {
+  "file": "assets/img/photos/hotel-reception.webp",
+  "width": 900,
+  "height": 1200,
+  "pexels_id": 7512139,
+  "source": "https://www.pexels.com/photo/7512139/",
+  "kind": "card",
+  "bytes": 118670
+ },
+ "stickers-wall": {
+  "file": "assets/img/photos/stickers-wall.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 14602294,
+  "source": "https://www.pexels.com/photo/14602294/",
+  "kind": "card",
+  "bytes": 254782
+ },
+ "villa-living": {
+  "file": "assets/img/photos/villa-living.webp",
+  "width": 900,
+  "height": 1350,
+  "pexels_id": 28256945,
+  "source": "https://www.pexels.com/photo/28256945/",
+  "kind": "card",
+  "bytes": 55992
+ },
+ "villa-bedroom": {
+  "file": "assets/img/photos/villa-bedroom.webp",
+  "width": 900,
+  "height": 1200,
+  "pexels_id": 1103808,
+  "source": "https://www.pexels.com/photo/1103808/",
+  "kind": "card",
+  "bytes": 99550
+ }
+}

@@ -1,0 +1,22 @@
+/* styleguide.css - hanya untuk _components.html (contoh memakai <!--@css styleguide.css-->). */
+.sg { border-bottom: 1px solid var(--border); }
+.sg__head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 16px; margin-bottom: 24px; }
+.sg__head h2 { margin: 0; font-size: 1.5rem; }
+.sg__num { font-family: var(--font-head); font-weight: 800; color: var(--red-600); }
+.sg__cls { margin: 0 0 24px; font-size: var(--fs-small); color: var(--text-muted); }
+.sg__cls code, .sg code { padding: 2px 6px; border-radius: 6px; background: var(--gray-50); color: var(--ink-900); font-size: .8125rem; }
+.sg-index { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; margin: 24px 0 0; padding: 0; }
+.sg-swatches { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 12px; list-style: none; margin: 0 0 32px; padding: 0; }
+.sg-swatch { border: 1px solid var(--border); border-radius: var(--radius-card); overflow: hidden; background: var(--white); font-size: var(--fs-small); }
+.sg-swatch__chip { display: block; height: 56px; }
+.sg-swatch__meta { display: block; padding: 8px 12px; line-height: 1.4; }
+.sg-swatch__meta b { display: block; color: var(--ink-900); }
+.sg-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-bottom: 16px; }
+.sg-narrow { max-width: 420px; }
+.sg-on-pane { padding: 32px; border-radius: var(--radius-card); background: linear-gradient(160deg, var(--ink-900), var(--ink-700)); }
+.sg-narrow-form { max-width: 760px; }
+/* Nomor/kelas demo di latar gelap dan band pane: red-300 di ink-900 (5,19:1),
+   putih di pane merah (red-600 di ink-900 hanya 3,25:1; red-300 di merah 1,6:1). */
+.section--dark .sg__num { color: var(--red-300); }
+.section--pane .sg__num,
+.section--pane .sg__cls { color: var(--white); }
