@@ -112,7 +112,7 @@ Situs final = **5 halaman**: Beranda, Tentang Kami, Layanan, Portofolio, Kontak 
 6. **Home service, garansi, one-day service (3 kartu)**: klaim placeholder sampai dikonfirmasi.
 7. **Harga mulai dari**: 4 kartu paket ringkas + tautan ke `/layanan/#harga`.
 8. **Proses 3 langkah**: Konsultasi → Ukur dan penawaran → Pemasangan.
-9. **Before/after + portofolio pilihan**: slider + 6 foto terbaru.
+9. **Portofolio pilihan**: 6 foto terbaru.
 10. **Area layanan**: chip 7 kota + peta ilustrasi, tautan ke `/tentang-kami/#area`.
 11. **Testimoni**: 3 kartu + tautan ke `/tentang-kami/#testimoni`.
 12. **Artikel terbaru**: 3 kartu.

@@ -552,7 +552,7 @@ Singkatan halaman: **Beranda**, **Tentang** (incl. `#testimoni`, `#area`), **Lay
 | `villa-living` | `villa-living.webp` | 900 x 1350 | Testi |
 | `villa-bedroom` | `villa-bedroom.webp` | 900 x 1200 | tidak terpasang di halaman (cadangan bank foto) |
 
-**Galeri proyek (32)**, foto unggulan CPT `proyek` = `g-*`. Caption tiap foto (format "jenis · kawasan") ada di `DEMO-CONTENT.md` bagian "Pemetaan foto dan caption galeri" dan bagian Portofolio; slider before/after di Beranda memakai `g-06-office-dark`, blok `#sticker-sandblast` di `/layanan/` memakai `g-03-conference`, keduanya dengan kelas `ba--simulate` (bagian 6, K6).
+**Galeri proyek (32)**, foto unggulan CPT `proyek` = `g-*`. Caption tiap foto (format "jenis · kawasan") ada di `DEMO-CONTENT.md` bagian "Pemetaan foto dan caption galeri" dan bagian Portofolio; slider before/after di blok `#sticker-sandblast` pada halaman `/layanan/` memakai `g-03-conference` dengan kelas `ba--simulate` (bagian 6, K6).
 
 | Peran | Ukuran | Halaman |
 |---|---|---|
@@ -561,7 +561,7 @@ Singkatan halaman: **Beranda**, **Tentang** (incl. `#testimoni`, `#area`), **Lay
 | `g-03-conference` | 900 x 602 | Home, S.Layanan, Porto |
 | `g-04-bathroom-frost` | 900 x 601 | S.Layanan, Porto, Video, S.Area, Artikel, S.Artikel |
 | `g-05-shower-glass` | 900 x 601 | Home, Porto, S.Area, Artikel, S.Artikel |
-| `g-06-office-dark` | 900 x 600 | Home, Porto, Video |
+| `g-06-office-dark` | 900 x 600 | Porto, Video |
 | `g-07-corporate-doors` | 900 x 1125 | Porto, S.Area |
 | `g-08-door-glass` | 900 x 1200 | Porto, S.Area |
 | `g-09-frosted-panels` | 900 x 1350 | S.Layanan, Porto, S.Area |
@@ -844,7 +844,7 @@ Klik penuh: container Link = Post URL bila kartu tidak memuat tautan lain; jika 
 
 ## 6. Daftar custom code
 
-Prinsip: pakai widget native sebisa mungkin; kode hanya untuk yang tidak punya padanan native. Tabel memuat **semua** kode dari mockup dan nasibnya. "Sumber" = file di `mockup/assets/` (baris untuk membantu menyalin). Halaman yang **selalu** butuh CSS/JS kustom: Beranda (before/after, peta, reveal), Layanan (before/after di blok sandblast + estimator), Kontak (bila Opsi B); halaman lain hanya Kit CSS + reveal.
+Prinsip: pakai widget native sebisa mungkin; kode hanya untuk yang tidak punya padanan native. Tabel memuat **semua** kode dari mockup dan nasibnya. "Sumber" = file di `mockup/assets/` (baris untuk membantu menyalin). Halaman yang **selalu** butuh CSS/JS kustom: Beranda (peta, reveal), Layanan (before/after di blok sandblast + estimator), Kontak (bila Opsi B); halaman lain hanya Kit CSS + reveal.
 
 | ID | Tujuan | Lokasi pasang | Sumber mockup | Widget native menggantikan? |
 |---|---|---|---|---|
@@ -853,7 +853,7 @@ Prinsip: pakai widget native sebisa mungkin; kode hanya untuk yang tidak punya p
 | K3 | Reveal: flag `html.sbb-js` + IntersectionObserver + stagger | Custom Code: Head dan Body - End | `js/app.js` modul `reveal` (492-514) | Sebagian: Entrance Animation "Fade In Up" (Advanced > Motion Effects), tanpa stagger 70 ms |
 | K4 | Query ID (bagian 4.5) dan artikel unggulan (6.3) | Child theme `functions.php` / Code Snippets | (baru, tidak ada di mockup) | Tidak |
 | K5 | `[sbb_rupiah]`, `[sbb_estimator]` (harga dari ACF Options page) | Sama dengan K4 | (baru; markup dari `mockup/src/pages/layanan.html`) | `[sbb_rupiah]`: Dynamic Tag ACF (Before "Rp ", After " / m²") hanya cukup untuk layanan per m²; Huruf Timbul 3D ("/ huruf") dan `harga_label` butuh shortcode |
-| K6 | Before/after slider (Beranda, blok `#sticker-sandblast` di Layanan), termasuk simulasi satu foto `ba--simulate` | CSS: Custom CSS halaman/Kit; JS: Custom Code Body - End (hanya halaman berslider) | `css/styles.css` 834-929 (bagian 5.08, memuat `.ba--simulate` dan `.ba__note`; + aturan `.icon`, bagian 4); `js/app.js` modul `slider` (268-325) | **Tidak ada** widget before/after native di Elementor Pro. Tanpa kode: dua gambar bersebelahan "Sebelum" / "Sesudah" |
+| K6 | Before/after slider (blok `#sticker-sandblast` di Layanan), termasuk simulasi satu foto `ba--simulate` | CSS: Custom CSS halaman/Kit; JS: Custom Code Body - End (hanya halaman berslider) | `css/styles.css` 834-929 (bagian 5.08, memuat `.ba--simulate` dan `.ba__note`; + aturan `.icon`, bagian 4); `js/app.js` modul `slider` (268-325) | **Tidak ada** widget before/after native di Elementor Pro. Tanpa kode: dua gambar bersebelahan "Sebelum" / "Sesudah" |
 | K7 | Estimator harga (delapan layanan per m² + Huruf Timbul 3D per huruf), di `/layanan/#estimasi` | CSS: `css/pages-b.css` 108-183; JS: `js/pages-b.js` 25-34 dan 36-168; markup dari `[sbb_estimator]` (6.2) | `src/pages/layanan.html` bagian `#estimasi` | **Tidak ada** kalkulator native. Tanpa kode: hapus section, tampilkan rumus "luas × harga per m²" dan tautan WhatsApp |
 | K8 | "Muat lebih banyak" portofolio | (tidak perlu) | `js/pages-b.js` 169-228; `css/pages-b.css` 215-223 | **Ya**: Loop Grid > Pagination "Load on Click" |
 | K9 | Filter galeri + lightbox | (tidak perlu untuk Opsi A) | `js/app.js` modul `gallery` (326-491); `css/styles.css` 930-1043 | **Ya**: Loop Grid + Taxonomy Filter (Pro), lightbox Elementor. Teks status "Menampilkan N dari M" butuh JS kecil (opsional, `06-portofolio.md`) |
@@ -956,7 +956,7 @@ add_shortcode( 'sbb_estimator', function () { // markup persis mockup src/pages/
 
 Perilaku estimator (JS K7, `pages-b.js` fungsi `initEstimator`): delapan layanan per m² menghitung luas × harga per m² (mis. 2,5 m² × Rp 135.000 = Rp 337.500) dan mengisi pesan WhatsApp dengan layanan, luas, dan estimasi; Huruf Timbul 3D (opsi ber-`data-unit="huruf"`) mengabaikan luas dan menampilkan "Rp 35.000 / huruf" dengan kalimat "Huruf Timbul 3D dihitung per huruf setelah desain disepakati (mulai Rp 35.000 / huruf), bukan per m². Kirim desain atau tulisan yang diinginkan lewat WhatsApp." Angka tampil dengan format `id-ID` (titik ribuan, koma desimal). Tidak ada pengali atau kisaran tambahan.
 
-Helper `[sbb_ba]` (before/after) dan `[sbb_area_teks]` **dihapus**: keduanya membaca ACF pada CPT `layanan` / `area` yang sudah tidak ada. Slider before/after kini hanya muncul satu kali di blok `#sticker-sandblast` pada halaman `/layanan/` (dan di Beranda), dan gambarnya bisa berupa field di Page itu sendiri — pakai dua Image widget dengan kelas `ba--simulate` (K6) tanpa shortcode. Teks lokal per kawasan di `/tentang-kami/#area` ditulis langsung di halaman.
+Helper `[sbb_ba]` (before/after) dan `[sbb_area_teks]` **dihapus**: keduanya membaca ACF pada CPT `layanan` / `area` yang sudah tidak ada. Slider before/after kini hanya muncul satu kali di blok `#sticker-sandblast` pada halaman `/layanan/`, dan gambarnya bisa berupa field di Page itu sendiri — pakai dua Image widget dengan kelas `ba--simulate` (K6) tanpa shortcode. Teks lokal per kawasan di `/tentang-kami/#area` ditulis langsung di halaman.
 
 ### 6.3 Artikel unggulan dan grid "Baca juga" (Artikel index)
 
@@ -1105,7 +1105,7 @@ Hanya bila Pro benar-benar tidak tersedia. Semua baris kolom "Kode?" bertanda **
 | Halaman | Kode | Alasan |
 |---|---|---|
 | Semua | K1 (Kit CSS, termasuk hero foto 2.10 dan foto konten 2.11), K3 (reveal), K17 (prioritas gambar hero) | Overlay gradien hero, frosted + @supports, focus ring, rasio gambar, tabel, reveal |
-| Home | K6 before/after, K18 peta SVG (HTML widget) | Tidak ada widget native |
+| Home | K18 peta SVG (HTML widget) | Tidak ada widget native |
 | Single Layanan (9) | K6 before/after | Sama |
 | Harga | K5+K7 estimator | Tidak ada kalkulator native |
 | Layanan index, Single Artikel | K1 (tabel `sbb-compare`, tipografi artikel) | Tabel via HTML widget |

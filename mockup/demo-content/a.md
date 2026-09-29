@@ -35,6 +35,6 @@ Caption bertanda (D) ada di DEMO-DATA; sisanya baru. Halaman lain yang memakai f
 | g-09-frosted-panels | Strip dan gradasi panel kaca - Nusa Dua | Template |
 | g-04-bathroom-frost | Polos penuh kamar mandi villa - Ubud | Template |
 | g-11-etched-portrait | Ukiran motif custom - Seminyak | Template |
-- Slider before/after: Home memakai g-06-office-dark, template memakai g-03-conference, keduanya dengan `.ba--simulate` dan catatan "Ilustrasi efek sandblast".
+- Slider before/after: template memakai g-03-conference dengan `.ba--simulate` dan catatan "Ilustrasi efek sandblast".
 - Foto artikel di Home: g-02-glass-hallway (sandblast atau kaca film), g-05-shower-glass (mengukur kaca), g-10-etched-leaf (merawat kaca).
 - Foto bengkel di Home: workshop-plotter, workshop-printer, workshop-installer; di Layanan: workshop-printing-hall.
